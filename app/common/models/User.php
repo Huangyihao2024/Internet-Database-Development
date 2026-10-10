@@ -1,5 +1,5 @@
 <?php
-/** Yii2框架文件；世界杯项目集成维护。原作者许可见LICENSE.md。 */
+/** Yii2原始框架文件；绿茵数据团队集成维护：黄奕浩 2413581（AI辅助）。 */
 
 declare(strict_types=1);
 
@@ -13,6 +13,7 @@ use yii\web\IdentityInterface;
 
 /**
  * User model
+ * 团队适配：黄奕浩 2413581（AI辅助）
  *
  * @property int $id
  * @property string $username
@@ -28,6 +29,8 @@ use yii\web\IdentityInterface;
  */
 class User extends ActiveRecord implements IdentityInterface
 {
+    public function getIsAdmin(): bool { return $this->role === 'admin'; }
+
     public const STATUS_DELETED = 0;
     public const STATUS_INACTIVE = 9;
     public const STATUS_ACTIVE = 10;
@@ -36,7 +39,7 @@ class User extends ActiveRecord implements IdentityInterface
      */
     public static function tableName(): string
     {
-        return '{{%user}}';
+        return 'wc_sys_user';
     }
 
     /**
