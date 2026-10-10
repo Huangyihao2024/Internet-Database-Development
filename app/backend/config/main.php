@@ -1,4 +1,8 @@
 <?php
+/**
+ * 知行学习团队：backend/config/main.php
+ * 负责人：黄奕浩 2413581；由AI辅助编写，保留原Yii框架署名。
+ */
 
 $params = array_merge(
     require __DIR__ . '/../../common/config/params.php',
@@ -9,6 +13,11 @@ $params = array_merge(
 
 return [
     'id' => 'app-backend',
+    'as adminGate' => [
+        'class' => \yii\filters\AccessControl::class,
+        'except' => ['site/login','site/logout','site/error'],
+        'rules' => [['allow'=>true,'roles'=>['@'],'matchCallback'=>static fn()=>Yii::$app->user->identity->isAdmin]],
+    ],
     'basePath' => dirname(__DIR__),
     'controllerNamespace' => 'backend\controllers',
     'bootstrap' => ['log'],

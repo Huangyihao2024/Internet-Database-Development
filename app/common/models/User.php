@@ -1,4 +1,5 @@
 <?php
+/** Yii2原始框架文件；知行学习团队集成维护：黄奕浩 2413581（AI辅助）。 */
 
 declare(strict_types=1);
 
@@ -12,6 +13,7 @@ use yii\web\IdentityInterface;
 
 /**
  * User model
+ * 团队适配：黄奕浩 2413581（AI辅助）
  *
  * @property int $id
  * @property string $username
@@ -27,6 +29,8 @@ use yii\web\IdentityInterface;
  */
 class User extends ActiveRecord implements IdentityInterface
 {
+    public function getIsAdmin(): bool { return $this->role === 'admin'; }
+
     public const STATUS_DELETED = 0;
     public const STATUS_INACTIVE = 9;
     public const STATUS_ACTIVE = 10;
