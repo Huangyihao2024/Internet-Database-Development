@@ -1,0 +1,4342 @@
+{
+  "source": "OpenFootball worldcup 2022 cup.txt + cup_finals.txt",
+  "groups": {
+    "A": [
+      "Qatar",
+      "Ecuador",
+      "Senegal",
+      "Netherlands"
+    ],
+    "B": [
+      "England",
+      "Iran",
+      "USA",
+      "Wales"
+    ],
+    "C": [
+      "Argentina",
+      "Saudi Arabia",
+      "Mexico",
+      "Poland"
+    ],
+    "D": [
+      "France",
+      "Australia",
+      "Denmark",
+      "Tunisia"
+    ],
+    "E": [
+      "Spain",
+      "Costa Rica",
+      "Germany",
+      "Japan"
+    ],
+    "F": [
+      "Belgium",
+      "Canada",
+      "Morocco",
+      "Croatia"
+    ],
+    "G": [
+      "Brazil",
+      "Serbia",
+      "Switzerland",
+      "Cameroon"
+    ],
+    "H": [
+      "Portugal",
+      "Ghana",
+      "Uruguay",
+      "South Korea"
+    ]
+  },
+  "matches": [
+    {
+      "stage": "Group",
+      "group": "A",
+      "date": "2022-11-20",
+      "time": "19:00",
+      "home": "Qatar",
+      "away": "Ecuador",
+      "normal_home": 0,
+      "normal_away": 2,
+      "extra_home": null,
+      "extra_away": null,
+      "penalty_home": null,
+      "penalty_away": null,
+      "stadium": "Al Bayt Stadium",
+      "city": "Al Khor",
+      "source_line": "worldcup_2022.txt:32",
+      "events": [
+        {
+          "team": "Qatar",
+          "player": "Saad Alsheeb",
+          "minute": 15,
+          "added_minute": 0,
+          "type": "yellow_card"
+        },
+        {
+          "team": "Qatar",
+          "player": "Almoez Ali",
+          "minute": 22,
+          "added_minute": 0,
+          "type": "yellow_card"
+        },
+        {
+          "team": "Qatar",
+          "player": "Karim Boudiaf",
+          "minute": 36,
+          "added_minute": 0,
+          "type": "yellow_card"
+        },
+        {
+          "team": "Qatar",
+          "player": "Akram Afif",
+          "minute": 78,
+          "added_minute": 0,
+          "type": "yellow_card"
+        },
+        {
+          "team": "Ecuador",
+          "player": "Enner Valencia",
+          "minute": 16,
+          "added_minute": 0,
+          "type": "penalty_goal"
+        },
+        {
+          "team": "Ecuador",
+          "player": "Enner Valencia",
+          "minute": 31,
+          "added_minute": 0,
+          "type": "goal"
+        },
+        {
+          "team": "Ecuador",
+          "player": "Moises Caicedo",
+          "minute": 29,
+          "added_minute": 0,
+          "type": "yellow_card"
+        },
+        {
+          "team": "Ecuador",
+          "player": "Jhegson Mendez",
+          "minute": 56,
+          "added_minute": 0,
+          "type": "yellow_card"
+        }
+      ]
+    },
+    {
+      "stage": "Group",
+      "group": "A",
+      "date": "2022-11-21",
+      "time": "19:00",
+      "home": "Senegal",
+      "away": "Netherlands",
+      "normal_home": 0,
+      "normal_away": 2,
+      "extra_home": null,
+      "extra_away": null,
+      "penalty_home": null,
+      "penalty_away": null,
+      "stadium": "Al Thumama Stadium",
+      "city": "Doha",
+      "source_line": "worldcup_2022.txt:36",
+      "events": [
+        {
+          "team": "Senegal",
+          "player": "Nampalys Mendy",
+          "minute": 90,
+          "added_minute": 4,
+          "type": "yellow_card"
+        },
+        {
+          "team": "Senegal",
+          "player": "Idrissa Gana Gueye",
+          "minute": 90,
+          "added_minute": 6,
+          "type": "yellow_card"
+        },
+        {
+          "team": "Netherlands",
+          "player": "Cody Gakpo",
+          "minute": 84,
+          "added_minute": 0,
+          "type": "goal"
+        },
+        {
+          "team": "Netherlands",
+          "player": "Davy Klaassen",
+          "minute": 90,
+          "added_minute": 9,
+          "type": "goal"
+        },
+        {
+          "team": "Netherlands",
+          "player": "Matthijs De Ligt",
+          "minute": 56,
+          "added_minute": 0,
+          "type": "yellow_card"
+        }
+      ]
+    },
+    {
+      "stage": "Group",
+      "group": "A",
+      "date": "2022-11-25",
+      "time": "16:00",
+      "home": "Qatar",
+      "away": "Senegal",
+      "normal_home": 1,
+      "normal_away": 3,
+      "extra_home": null,
+      "extra_away": null,
+      "penalty_home": null,
+      "penalty_away": null,
+      "stadium": "Al Thumama Stadium",
+      "city": "Doha",
+      "source_line": "worldcup_2022.txt:40",
+      "events": [
+        {
+          "team": "Qatar",
+          "player": "Mohammed Muntari",
+          "minute": 78,
+          "added_minute": 0,
+          "type": "goal"
+        },
+        {
+          "team": "Qatar",
+          "player": "Ismail Mohamad",
+          "minute": 20,
+          "added_minute": 0,
+          "type": "yellow_card"
+        },
+        {
+          "team": "Qatar",
+          "player": "Homam Ahmed",
+          "minute": 45,
+          "added_minute": 2,
+          "type": "yellow_card"
+        },
+        {
+          "team": "Qatar",
+          "player": "Assim Madibo",
+          "minute": 90,
+          "added_minute": 1,
+          "type": "yellow_card"
+        },
+        {
+          "team": "Senegal",
+          "player": "Boulaye Dia",
+          "minute": 41,
+          "added_minute": 0,
+          "type": "goal"
+        },
+        {
+          "team": "Senegal",
+          "player": "Famara Diedhiou",
+          "minute": 48,
+          "added_minute": 0,
+          "type": "goal"
+        },
+        {
+          "team": "Senegal",
+          "player": "Cheikh Dieng",
+          "minute": 84,
+          "added_minute": 0,
+          "type": "goal"
+        },
+        {
+          "team": "Senegal",
+          "player": "Boulaye Dia",
+          "minute": 30,
+          "added_minute": 0,
+          "type": "yellow_card"
+        },
+        {
+          "team": "Senegal",
+          "player": "Ismail Jakobs",
+          "minute": 52,
+          "added_minute": 0,
+          "type": "yellow_card"
+        },
+        {
+          "team": "Senegal",
+          "player": "Pathe Ciss",
+          "minute": 87,
+          "added_minute": 0,
+          "type": "yellow_card"
+        }
+      ]
+    },
+    {
+      "stage": "Group",
+      "group": "A",
+      "date": "2022-11-25",
+      "time": "19:00",
+      "home": "Netherlands",
+      "away": "Ecuador",
+      "normal_home": 1,
+      "normal_away": 1,
+      "extra_home": null,
+      "extra_away": null,
+      "penalty_home": null,
+      "penalty_away": null,
+      "stadium": "Khalifa International Stadium",
+      "city": "Al Rayyan",
+      "source_line": "worldcup_2022.txt:42",
+      "events": [
+        {
+          "team": "Netherlands",
+          "player": "Cody Gakpo",
+          "minute": 6,
+          "added_minute": 0,
+          "type": "goal"
+        },
+        {
+          "team": "Ecuador",
+          "player": "Enner Valencia",
+          "minute": 49,
+          "added_minute": 0,
+          "type": "goal"
+        },
+        {
+          "team": "Ecuador",
+          "player": "Jhegson Mendez",
+          "minute": 57,
+          "added_minute": 0,
+          "type": "yellow_card"
+        }
+      ]
+    },
+    {
+      "stage": "Group",
+      "group": "A",
+      "date": "2022-11-29",
+      "time": "18:00",
+      "home": "Ecuador",
+      "away": "Senegal",
+      "normal_home": 1,
+      "normal_away": 2,
+      "extra_home": null,
+      "extra_away": null,
+      "penalty_home": null,
+      "penalty_away": null,
+      "stadium": "Khalifa International Stadium",
+      "city": "Al Rayyan",
+      "source_line": "worldcup_2022.txt:46",
+      "events": [
+        {
+          "team": "Ecuador",
+          "player": "Moises Caicedo",
+          "minute": 67,
+          "added_minute": 0,
+          "type": "goal"
+        },
+        {
+          "team": "Senegal",
+          "player": "Ismaila Sarr",
+          "minute": 44,
+          "added_minute": 0,
+          "type": "penalty_goal"
+        },
+        {
+          "team": "Senegal",
+          "player": "Kalidou Koulibaly",
+          "minute": 70,
+          "added_minute": 0,
+          "type": "goal"
+        },
+        {
+          "team": "Senegal",
+          "player": "Idrissa Gana Gueye",
+          "minute": 66,
+          "added_minute": 0,
+          "type": "yellow_card"
+        }
+      ]
+    },
+    {
+      "stage": "Group",
+      "group": "A",
+      "date": "2022-11-29",
+      "time": "18:00",
+      "home": "Netherlands",
+      "away": "Qatar",
+      "normal_home": 2,
+      "normal_away": 0,
+      "extra_home": null,
+      "extra_away": null,
+      "penalty_home": null,
+      "penalty_away": null,
+      "stadium": "Al Bayt Stadium",
+      "city": "Al Khor",
+      "source_line": "worldcup_2022.txt:48",
+      "events": [
+        {
+          "team": "Netherlands",
+          "player": "Cody Gakpo",
+          "minute": 26,
+          "added_minute": 0,
+          "type": "goal"
+        },
+        {
+          "team": "Netherlands",
+          "player": "Frenkie De Jong",
+          "minute": 49,
+          "added_minute": 0,
+          "type": "goal"
+        },
+        {
+          "team": "Netherlands",
+          "player": "Nathan Ake",
+          "minute": 52,
+          "added_minute": 0,
+          "type": "yellow_card"
+        }
+      ]
+    },
+    {
+      "stage": "Group",
+      "group": "B",
+      "date": "2022-11-21",
+      "time": "16:00",
+      "home": "England",
+      "away": "Iran",
+      "normal_home": 6,
+      "normal_away": 2,
+      "extra_home": null,
+      "extra_away": null,
+      "penalty_home": null,
+      "penalty_away": null,
+      "stadium": "Khalifa International Stadium",
+      "city": "Al Rayyan",
+      "source_line": "worldcup_2022.txt:53",
+      "events": [
+        {
+          "team": "England",
+          "player": "Jude Bellingham",
+          "minute": 35,
+          "added_minute": 0,
+          "type": "goal"
+        },
+        {
+          "team": "England",
+          "player": "Bukayo Saka",
+          "minute": 43,
+          "added_minute": 0,
+          "type": "goal"
+        },
+        {
+          "team": "England",
+          "player": "Raheem Sterling",
+          "minute": 45,
+          "added_minute": 1,
+          "type": "goal"
+        },
+        {
+          "team": "England",
+          "player": "Bukayo Saka",
+          "minute": 62,
+          "added_minute": 0,
+          "type": "goal"
+        },
+        {
+          "team": "England",
+          "player": "Marcus Rashford",
+          "minute": 71,
+          "added_minute": 0,
+          "type": "goal"
+        },
+        {
+          "team": "England",
+          "player": "Jack Grealish",
+          "minute": 90,
+          "added_minute": 0,
+          "type": "goal"
+        },
+        {
+          "team": "Iran",
+          "player": "Mehdi Taremi",
+          "minute": 65,
+          "added_minute": 0,
+          "type": "goal"
+        },
+        {
+          "team": "Iran",
+          "player": "Mehdi Taremi",
+          "minute": 90,
+          "added_minute": 13,
+          "type": "penalty_goal"
+        },
+        {
+          "team": "Iran",
+          "player": "Alireza Jahanbakhsh",
+          "minute": 25,
+          "added_minute": 0,
+          "type": "yellow_card"
+        },
+        {
+          "team": "Iran",
+          "player": "Morteza Pouraliganji",
+          "minute": 48,
+          "added_minute": 0,
+          "type": "yellow_card"
+        }
+      ]
+    },
+    {
+      "stage": "Group",
+      "group": "B",
+      "date": "2022-11-21",
+      "time": "22:00",
+      "home": "USA",
+      "away": "Wales",
+      "normal_home": 1,
+      "normal_away": 1,
+      "extra_home": null,
+      "extra_away": null,
+      "penalty_home": null,
+      "penalty_away": null,
+      "stadium": "Ahmad bin Ali Stadium",
+      "city": "Al Rayyan",
+      "source_line": "worldcup_2022.txt:55",
+      "events": [
+        {
+          "team": "USA",
+          "player": "Tim Weah",
+          "minute": 36,
+          "added_minute": 0,
+          "type": "goal"
+        },
+        {
+          "team": "USA",
+          "player": "Sergino Dest",
+          "minute": 11,
+          "added_minute": 0,
+          "type": "yellow_card"
+        },
+        {
+          "team": "USA",
+          "player": "Weston Mckennie",
+          "minute": 13,
+          "added_minute": 0,
+          "type": "yellow_card"
+        },
+        {
+          "team": "USA",
+          "player": "Tim Ream",
+          "minute": 51,
+          "added_minute": 0,
+          "type": "yellow_card"
+        },
+        {
+          "team": "USA",
+          "player": "Kellyn Perry-Acosta",
+          "minute": 90,
+          "added_minute": 10,
+          "type": "yellow_card"
+        },
+        {
+          "team": "Wales",
+          "player": "Gareth Bale",
+          "minute": 82,
+          "added_minute": 0,
+          "type": "penalty_goal"
+        },
+        {
+          "team": "Wales",
+          "player": "Gareth Bale",
+          "minute": 40,
+          "added_minute": 0,
+          "type": "yellow_card"
+        },
+        {
+          "team": "Wales",
+          "player": "Chris Mepham",
+          "minute": 45,
+          "added_minute": 2,
+          "type": "yellow_card"
+        }
+      ]
+    },
+    {
+      "stage": "Group",
+      "group": "B",
+      "date": "2022-11-25",
+      "time": "13:00",
+      "home": "Wales",
+      "away": "Iran",
+      "normal_home": 0,
+      "normal_away": 2,
+      "extra_home": null,
+      "extra_away": null,
+      "penalty_home": null,
+      "penalty_away": null,
+      "stadium": "Ahmad bin Ali Stadium",
+      "city": "Al Rayyan",
+      "source_line": "worldcup_2022.txt:59",
+      "events": [
+        {
+          "team": "Wales",
+          "player": "Joe Rodon",
+          "minute": 45,
+          "added_minute": 3,
+          "type": "yellow_card"
+        },
+        {
+          "team": "Wales",
+          "player": "Wayne Hennessey",
+          "minute": 86,
+          "added_minute": 0,
+          "type": "red_card"
+        },
+        {
+          "team": "Iran",
+          "player": "Roozbeh Cheshmi",
+          "minute": 90,
+          "added_minute": 8,
+          "type": "goal"
+        },
+        {
+          "team": "Iran",
+          "player": "Ramin Rezaeian",
+          "minute": 90,
+          "added_minute": 11,
+          "type": "goal"
+        },
+        {
+          "team": "Iran",
+          "player": "Alireza Jahanbakhsh",
+          "minute": 90,
+          "added_minute": 5,
+          "type": "yellow_card"
+        },
+        {
+          "team": "Iran",
+          "player": "Ramin Rezaeian",
+          "minute": 90,
+          "added_minute": 5,
+          "type": "yellow_card"
+        }
+      ]
+    },
+    {
+      "stage": "Group",
+      "group": "B",
+      "date": "2022-11-25",
+      "time": "22:00",
+      "home": "England",
+      "away": "USA",
+      "normal_home": 0,
+      "normal_away": 0,
+      "extra_home": null,
+      "extra_away": null,
+      "penalty_home": null,
+      "penalty_away": null,
+      "stadium": "Al Bayt Stadium",
+      "city": "Al Khor",
+      "source_line": "worldcup_2022.txt:61",
+      "events": []
+    },
+    {
+      "stage": "Group",
+      "group": "B",
+      "date": "2022-11-29",
+      "time": "22:00",
+      "home": "Wales",
+      "away": "England",
+      "normal_home": 0,
+      "normal_away": 3,
+      "extra_home": null,
+      "extra_away": null,
+      "penalty_home": null,
+      "penalty_away": null,
+      "stadium": "Ahmad bin Ali Stadium",
+      "city": "Al Rayyan",
+      "source_line": "worldcup_2022.txt:64",
+      "events": [
+        {
+          "team": "Wales",
+          "player": "Daniel James",
+          "minute": 29,
+          "added_minute": 0,
+          "type": "yellow_card"
+        },
+        {
+          "team": "Wales",
+          "player": "Aaron Ramsey",
+          "minute": 61,
+          "added_minute": 0,
+          "type": "yellow_card"
+        },
+        {
+          "team": "England",
+          "player": "Marcus Rashford",
+          "minute": 50,
+          "added_minute": 0,
+          "type": "goal"
+        },
+        {
+          "team": "England",
+          "player": "Phil Foden",
+          "minute": 51,
+          "added_minute": 0,
+          "type": "goal"
+        },
+        {
+          "team": "England",
+          "player": "Marcus Rashford",
+          "minute": 68,
+          "added_minute": 0,
+          "type": "goal"
+        }
+      ]
+    },
+    {
+      "stage": "Group",
+      "group": "B",
+      "date": "2022-11-29",
+      "time": "22:00",
+      "home": "Iran",
+      "away": "USA",
+      "normal_home": 0,
+      "normal_away": 1,
+      "extra_home": null,
+      "extra_away": null,
+      "penalty_home": null,
+      "penalty_away": null,
+      "stadium": "Al Thumama Stadium",
+      "city": "Doha",
+      "source_line": "worldcup_2022.txt:66",
+      "events": [
+        {
+          "team": "Iran",
+          "player": "Majid Hosseini",
+          "minute": 77,
+          "added_minute": 0,
+          "type": "yellow_card"
+        },
+        {
+          "team": "Iran",
+          "player": "Abolfazl Jalali",
+          "minute": 90,
+          "added_minute": 6,
+          "type": "yellow_card"
+        },
+        {
+          "team": "USA",
+          "player": "Christian  Pulisic",
+          "minute": 38,
+          "added_minute": 0,
+          "type": "goal"
+        },
+        {
+          "team": "USA",
+          "player": "Tyler  Adams",
+          "minute": 43,
+          "added_minute": 0,
+          "type": "yellow_card"
+        }
+      ]
+    },
+    {
+      "stage": "Group",
+      "group": "C",
+      "date": "2022-11-22",
+      "time": "13:00",
+      "home": "Argentina",
+      "away": "Saudi Arabia",
+      "normal_home": 1,
+      "normal_away": 2,
+      "extra_home": null,
+      "extra_away": null,
+      "penalty_home": null,
+      "penalty_away": null,
+      "stadium": "Lusail Iconic Stadium",
+      "city": "Lusail",
+      "source_line": "worldcup_2022.txt:71",
+      "events": [
+        {
+          "team": "Argentina",
+          "player": "Lionel Messi",
+          "minute": 10,
+          "added_minute": 0,
+          "type": "penalty_goal"
+        },
+        {
+          "team": "Saudi Arabia",
+          "player": "Saleh Alshehri",
+          "minute": 48,
+          "added_minute": 0,
+          "type": "goal"
+        },
+        {
+          "team": "Saudi Arabia",
+          "player": "Salem Aldawsari",
+          "minute": 53,
+          "added_minute": 0,
+          "type": "goal"
+        },
+        {
+          "team": "Saudi Arabia",
+          "player": "Abdulelah Almalki",
+          "minute": 67,
+          "added_minute": 0,
+          "type": "yellow_card"
+        },
+        {
+          "team": "Saudi Arabia",
+          "player": "Ali Albulayhi",
+          "minute": 75,
+          "added_minute": 0,
+          "type": "yellow_card"
+        },
+        {
+          "team": "Saudi Arabia",
+          "player": "Salem Aldawsari",
+          "minute": 79,
+          "added_minute": 0,
+          "type": "yellow_card"
+        },
+        {
+          "team": "Saudi Arabia",
+          "player": "Saud Abdulhamid",
+          "minute": 82,
+          "added_minute": 0,
+          "type": "yellow_card"
+        },
+        {
+          "team": "Saudi Arabia",
+          "player": "Nawaf Al Abid",
+          "minute": 88,
+          "added_minute": 0,
+          "type": "yellow_card"
+        },
+        {
+          "team": "Saudi Arabia",
+          "player": "Mohammed Alowais",
+          "minute": 90,
+          "added_minute": 2,
+          "type": "yellow_card"
+        }
+      ]
+    },
+    {
+      "stage": "Group",
+      "group": "C",
+      "date": "2022-11-22",
+      "time": "19:00",
+      "home": "Mexico",
+      "away": "Poland",
+      "normal_home": 0,
+      "normal_away": 0,
+      "extra_home": null,
+      "extra_away": null,
+      "penalty_home": null,
+      "penalty_away": null,
+      "stadium": "Stadium 974",
+      "city": "Doha",
+      "source_line": "worldcup_2022.txt:73",
+      "events": [
+        {
+          "team": "Mexico",
+          "player": "Jorge Sanchez",
+          "minute": 29,
+          "added_minute": 0,
+          "type": "yellow_card"
+        },
+        {
+          "team": "Mexico",
+          "player": "Hector Moreno",
+          "minute": 56,
+          "added_minute": 0,
+          "type": "yellow_card"
+        },
+        {
+          "team": "Poland",
+          "player": "Przemyslaw Frankowski",
+          "minute": 76,
+          "added_minute": 0,
+          "type": "yellow_card"
+        }
+      ]
+    },
+    {
+      "stage": "Group",
+      "group": "C",
+      "date": "2022-11-26",
+      "time": "16:00",
+      "home": "Poland",
+      "away": "Saudi Arabia",
+      "normal_home": 2,
+      "normal_away": 0,
+      "extra_home": null,
+      "extra_away": null,
+      "penalty_home": null,
+      "penalty_away": null,
+      "stadium": "Education City Stadium",
+      "city": "Al Rayyan",
+      "source_line": "worldcup_2022.txt:76",
+      "events": [
+        {
+          "team": "Poland",
+          "player": "Piotr Zielinski",
+          "minute": 39,
+          "added_minute": 0,
+          "type": "goal"
+        },
+        {
+          "team": "Poland",
+          "player": "Robert Lewandowski",
+          "minute": 82,
+          "added_minute": 0,
+          "type": "goal"
+        },
+        {
+          "team": "Poland",
+          "player": "Jakub Kiwior",
+          "minute": 15,
+          "added_minute": 0,
+          "type": "yellow_card"
+        },
+        {
+          "team": "Poland",
+          "player": "Matty Cash",
+          "minute": 16,
+          "added_minute": 0,
+          "type": "yellow_card"
+        },
+        {
+          "team": "Poland",
+          "player": "Arkadiusz Milik",
+          "minute": 19,
+          "added_minute": 0,
+          "type": "yellow_card"
+        },
+        {
+          "team": "Saudi Arabia",
+          "player": "Abdulelah Almalki",
+          "minute": 20,
+          "added_minute": 0,
+          "type": "yellow_card"
+        },
+        {
+          "team": "Saudi Arabia",
+          "player": "Abdulelah Alamri",
+          "minute": 45,
+          "added_minute": 4,
+          "type": "yellow_card"
+        }
+      ]
+    },
+    {
+      "stage": "Group",
+      "group": "C",
+      "date": "2022-11-26",
+      "time": "22:00",
+      "home": "Argentina",
+      "away": "Mexico",
+      "normal_home": 2,
+      "normal_away": 0,
+      "extra_home": null,
+      "extra_away": null,
+      "penalty_home": null,
+      "penalty_away": null,
+      "stadium": "Lusail Iconic Stadium",
+      "city": "Lusail",
+      "source_line": "worldcup_2022.txt:78",
+      "events": [
+        {
+          "team": "Argentina",
+          "player": "Lionel Messi",
+          "minute": 64,
+          "added_minute": 0,
+          "type": "goal"
+        },
+        {
+          "team": "Argentina",
+          "player": "Enzo Fernandez",
+          "minute": 87,
+          "added_minute": 0,
+          "type": "goal"
+        },
+        {
+          "team": "Argentina",
+          "player": "Gonzalo Montiel",
+          "minute": 43,
+          "added_minute": 0,
+          "type": "yellow_card"
+        },
+        {
+          "team": "Mexico",
+          "player": "Nestor Araujo",
+          "minute": 22,
+          "added_minute": 0,
+          "type": "yellow_card"
+        },
+        {
+          "team": "Mexico",
+          "player": "Erick Gutierrez",
+          "minute": 50,
+          "added_minute": 0,
+          "type": "yellow_card"
+        },
+        {
+          "team": "Mexico",
+          "player": "Hector Herrera",
+          "minute": 66,
+          "added_minute": 0,
+          "type": "yellow_card"
+        },
+        {
+          "team": "Mexico",
+          "player": "Roberto Alvarado",
+          "minute": 89,
+          "added_minute": 0,
+          "type": "yellow_card"
+        }
+      ]
+    },
+    {
+      "stage": "Group",
+      "group": "C",
+      "date": "2022-11-30",
+      "time": "22:00",
+      "home": "Poland",
+      "away": "Argentina",
+      "normal_home": 0,
+      "normal_away": 2,
+      "extra_home": null,
+      "extra_away": null,
+      "penalty_home": null,
+      "penalty_away": null,
+      "stadium": "Stadium 974",
+      "city": "Doha",
+      "source_line": "worldcup_2022.txt:82",
+      "events": [
+        {
+          "team": "Poland",
+          "player": "Grzegorz Krychowiak",
+          "minute": 78,
+          "added_minute": 0,
+          "type": "yellow_card"
+        },
+        {
+          "team": "Argentina",
+          "player": "Alexis Mac Allister",
+          "minute": 46,
+          "added_minute": 0,
+          "type": "goal"
+        },
+        {
+          "team": "Argentina",
+          "player": "Julian Alvarez",
+          "minute": 67,
+          "added_minute": 0,
+          "type": "goal"
+        },
+        {
+          "team": "Argentina",
+          "player": "Marcos Acuna",
+          "minute": 49,
+          "added_minute": 0,
+          "type": "yellow_card"
+        }
+      ]
+    },
+    {
+      "stage": "Group",
+      "group": "C",
+      "date": "2022-11-30",
+      "time": "22:00",
+      "home": "Saudi Arabia",
+      "away": "Mexico",
+      "normal_home": 1,
+      "normal_away": 2,
+      "extra_home": null,
+      "extra_away": null,
+      "penalty_home": null,
+      "penalty_away": null,
+      "stadium": "Lusail Iconic Stadium",
+      "city": "Lusail",
+      "source_line": "worldcup_2022.txt:84",
+      "events": [
+        {
+          "team": "Saudi Arabia",
+          "player": "Salem Aldawsari",
+          "minute": 90,
+          "added_minute": 5,
+          "type": "goal"
+        },
+        {
+          "team": "Saudi Arabia",
+          "player": "Saleh Alshehri",
+          "minute": 28,
+          "added_minute": 0,
+          "type": "yellow_card"
+        },
+        {
+          "team": "Saudi Arabia",
+          "player": "Ali Alhassan",
+          "minute": 34,
+          "added_minute": 0,
+          "type": "yellow_card"
+        },
+        {
+          "team": "Saudi Arabia",
+          "player": "Hassan Altambakti",
+          "minute": 52,
+          "added_minute": 0,
+          "type": "yellow_card"
+        },
+        {
+          "team": "Saudi Arabia",
+          "player": "Abdullah Madu",
+          "minute": 81,
+          "added_minute": 0,
+          "type": "yellow_card"
+        },
+        {
+          "team": "Saudi Arabia",
+          "player": "Abdulelah Alamri",
+          "minute": 90,
+          "added_minute": 1,
+          "type": "yellow_card"
+        },
+        {
+          "team": "Saudi Arabia",
+          "player": "Hatan Bahbri",
+          "minute": 90,
+          "added_minute": 7,
+          "type": "yellow_card"
+        },
+        {
+          "team": "Mexico",
+          "player": "Henry Martin",
+          "minute": 47,
+          "added_minute": 0,
+          "type": "goal"
+        },
+        {
+          "team": "Mexico",
+          "player": "Luis Chavez",
+          "minute": 52,
+          "added_minute": 0,
+          "type": "goal"
+        },
+        {
+          "team": "Mexico",
+          "player": "Edson Alvarez",
+          "minute": 16,
+          "added_minute": 0,
+          "type": "yellow_card"
+        }
+      ]
+    },
+    {
+      "stage": "Group",
+      "group": "D",
+      "date": "2022-11-22",
+      "time": "16:00",
+      "home": "Denmark",
+      "away": "Tunisia",
+      "normal_home": 0,
+      "normal_away": 0,
+      "extra_home": null,
+      "extra_away": null,
+      "penalty_home": null,
+      "penalty_away": null,
+      "stadium": "Education City Stadium",
+      "city": "Al Rayyan",
+      "source_line": "worldcup_2022.txt:89",
+      "events": [
+        {
+          "team": "Denmark",
+          "player": "Rasmus Kristensen",
+          "minute": 24,
+          "added_minute": 0,
+          "type": "yellow_card"
+        },
+        {
+          "team": "Denmark",
+          "player": "Mathias Jensen",
+          "minute": 78,
+          "added_minute": 0,
+          "type": "yellow_card"
+        },
+        {
+          "team": "Tunisia",
+          "player": "Taha Khenissi",
+          "minute": 86,
+          "added_minute": 0,
+          "type": "yellow_card"
+        }
+      ]
+    },
+    {
+      "stage": "Group",
+      "group": "D",
+      "date": "2022-11-22",
+      "time": "22:00",
+      "home": "France",
+      "away": "Australia",
+      "normal_home": 4,
+      "normal_away": 1,
+      "extra_home": null,
+      "extra_away": null,
+      "penalty_home": null,
+      "penalty_away": null,
+      "stadium": "Al Janoub Stadium",
+      "city": "Al Wakrah",
+      "source_line": "worldcup_2022.txt:90",
+      "events": [
+        {
+          "team": "France",
+          "player": "Adrien Rabiot",
+          "minute": 27,
+          "added_minute": 0,
+          "type": "goal"
+        },
+        {
+          "team": "France",
+          "player": "Olivier Giroud",
+          "minute": 32,
+          "added_minute": 0,
+          "type": "goal"
+        },
+        {
+          "team": "France",
+          "player": "Kylian Mbappe",
+          "minute": 68,
+          "added_minute": 0,
+          "type": "goal"
+        },
+        {
+          "team": "France",
+          "player": "Olivier Giroud",
+          "minute": 71,
+          "added_minute": 0,
+          "type": "goal"
+        },
+        {
+          "team": "Australia",
+          "player": "Craig Goodwin",
+          "minute": 9,
+          "added_minute": 0,
+          "type": "goal"
+        },
+        {
+          "team": "Australia",
+          "player": "Mitch Duke",
+          "minute": 55,
+          "added_minute": 0,
+          "type": "yellow_card"
+        },
+        {
+          "team": "Australia",
+          "player": "Jackson Irvine",
+          "minute": 80,
+          "added_minute": 0,
+          "type": "yellow_card"
+        },
+        {
+          "team": "Australia",
+          "player": "Aaron Mooy",
+          "minute": 90,
+          "added_minute": 5,
+          "type": "yellow_card"
+        }
+      ]
+    },
+    {
+      "stage": "Group",
+      "group": "D",
+      "date": "2022-11-26",
+      "time": "13:00",
+      "home": "Tunisia",
+      "away": "Australia",
+      "normal_home": 0,
+      "normal_away": 1,
+      "extra_home": null,
+      "extra_away": null,
+      "penalty_home": null,
+      "penalty_away": null,
+      "stadium": "Al Janoub Stadium",
+      "city": "Al Wakrah",
+      "source_line": "worldcup_2022.txt:94",
+      "events": [
+        {
+          "team": "Tunisia",
+          "player": "Aissa Laidouni",
+          "minute": 26,
+          "added_minute": 0,
+          "type": "yellow_card"
+        },
+        {
+          "team": "Tunisia",
+          "player": "Ali Abdi",
+          "minute": 64,
+          "added_minute": 0,
+          "type": "yellow_card"
+        },
+        {
+          "team": "Tunisia",
+          "player": "Ferjani Sassi",
+          "minute": 90,
+          "added_minute": 3,
+          "type": "yellow_card"
+        },
+        {
+          "team": "Australia",
+          "player": "Mitch Duke",
+          "minute": 23,
+          "added_minute": 0,
+          "type": "goal"
+        }
+      ]
+    },
+    {
+      "stage": "Group",
+      "group": "D",
+      "date": "2022-11-26",
+      "time": "19:00",
+      "home": "France",
+      "away": "Denmark",
+      "normal_home": 2,
+      "normal_away": 1,
+      "extra_home": null,
+      "extra_away": null,
+      "penalty_home": null,
+      "penalty_away": null,
+      "stadium": "Stadium 974",
+      "city": "Doha",
+      "source_line": "worldcup_2022.txt:96",
+      "events": [
+        {
+          "team": "France",
+          "player": "Kylian Mbappe",
+          "minute": 61,
+          "added_minute": 0,
+          "type": "goal"
+        },
+        {
+          "team": "France",
+          "player": "Kylian Mbappe",
+          "minute": 86,
+          "added_minute": 0,
+          "type": "goal"
+        },
+        {
+          "team": "France",
+          "player": "Jules Kounde",
+          "minute": 43,
+          "added_minute": 0,
+          "type": "yellow_card"
+        },
+        {
+          "team": "Denmark",
+          "player": "Andreas Christensen",
+          "minute": 68,
+          "added_minute": 0,
+          "type": "goal"
+        },
+        {
+          "team": "Denmark",
+          "player": "Andreas Christensen",
+          "minute": 20,
+          "added_minute": 0,
+          "type": "yellow_card"
+        },
+        {
+          "team": "Denmark",
+          "player": "Andreas Cornelius",
+          "minute": 23,
+          "added_minute": 0,
+          "type": "yellow_card"
+        }
+      ]
+    },
+    {
+      "stage": "Group",
+      "group": "D",
+      "date": "2022-11-30",
+      "time": "18:00",
+      "home": "Australia",
+      "away": "Denmark",
+      "normal_home": 1,
+      "normal_away": 0,
+      "extra_home": null,
+      "extra_away": null,
+      "penalty_home": null,
+      "penalty_away": null,
+      "stadium": "Al Janoub Stadium",
+      "city": "Al Wakrah",
+      "source_line": "worldcup_2022.txt:100",
+      "events": [
+        {
+          "team": "Australia",
+          "player": "Mathew Leckie",
+          "minute": 60,
+          "added_minute": 0,
+          "type": "goal"
+        },
+        {
+          "team": "Australia",
+          "player": "Aziz Behich",
+          "minute": 4,
+          "added_minute": 0,
+          "type": "yellow_card"
+        },
+        {
+          "team": "Australia",
+          "player": "Milos Degenek",
+          "minute": 57,
+          "added_minute": 0,
+          "type": "yellow_card"
+        },
+        {
+          "team": "Denmark",
+          "player": "Robert Skov",
+          "minute": 75,
+          "added_minute": 0,
+          "type": "yellow_card"
+        }
+      ]
+    },
+    {
+      "stage": "Group",
+      "group": "D",
+      "date": "2022-11-30",
+      "time": "18:00",
+      "home": "Tunisia",
+      "away": "France",
+      "normal_home": 1,
+      "normal_away": 0,
+      "extra_home": null,
+      "extra_away": null,
+      "penalty_home": null,
+      "penalty_away": null,
+      "stadium": "Education City Stadium",
+      "city": "Al Rayyan",
+      "source_line": "worldcup_2022.txt:102",
+      "events": [
+        {
+          "team": "Tunisia",
+          "player": "Wahbi Khazri",
+          "minute": 58,
+          "added_minute": 0,
+          "type": "goal"
+        },
+        {
+          "team": "Tunisia",
+          "player": "Wajdi Kechrida",
+          "minute": 28,
+          "added_minute": 0,
+          "type": "yellow_card"
+        }
+      ]
+    },
+    {
+      "stage": "Group",
+      "group": "E",
+      "date": "2022-11-23",
+      "time": "16:00",
+      "home": "Germany",
+      "away": "Japan",
+      "normal_home": 1,
+      "normal_away": 2,
+      "extra_home": null,
+      "extra_away": null,
+      "penalty_home": null,
+      "penalty_away": null,
+      "stadium": "Khalifa International Stadium",
+      "city": "Al Rayyan",
+      "source_line": "worldcup_2022.txt:107",
+      "events": [
+        {
+          "team": "Germany",
+          "player": "Ilkay Guendogan",
+          "minute": 33,
+          "added_minute": 0,
+          "type": "penalty_goal"
+        },
+        {
+          "team": "Japan",
+          "player": "Ritsu Doan",
+          "minute": 75,
+          "added_minute": 0,
+          "type": "goal"
+        },
+        {
+          "team": "Japan",
+          "player": "Takuma Asano",
+          "minute": 83,
+          "added_minute": 0,
+          "type": "goal"
+        }
+      ]
+    },
+    {
+      "stage": "Group",
+      "group": "E",
+      "date": "2022-11-23",
+      "time": "19:00",
+      "home": "Spain",
+      "away": "Costa Rica",
+      "normal_home": 7,
+      "normal_away": 0,
+      "extra_home": null,
+      "extra_away": null,
+      "penalty_home": null,
+      "penalty_away": null,
+      "stadium": "Al Thumama Stadium",
+      "city": "Doha",
+      "source_line": "worldcup_2022.txt:109",
+      "events": [
+        {
+          "team": "Spain",
+          "player": "Dani Olmo",
+          "minute": 11,
+          "added_minute": 0,
+          "type": "goal"
+        },
+        {
+          "team": "Spain",
+          "player": "Marco Asensio",
+          "minute": 21,
+          "added_minute": 0,
+          "type": "goal"
+        },
+        {
+          "team": "Spain",
+          "player": "Ferran Torres",
+          "minute": 31,
+          "added_minute": 0,
+          "type": "penalty_goal"
+        },
+        {
+          "team": "Spain",
+          "player": "Ferran Torres",
+          "minute": 54,
+          "added_minute": 0,
+          "type": "goal"
+        },
+        {
+          "team": "Spain",
+          "player": "Gavi",
+          "minute": 74,
+          "added_minute": 0,
+          "type": "goal"
+        },
+        {
+          "team": "Spain",
+          "player": "Carlos Soler",
+          "minute": 90,
+          "added_minute": 0,
+          "type": "goal"
+        },
+        {
+          "team": "Spain",
+          "player": "Alvaro Morata",
+          "minute": 90,
+          "added_minute": 2,
+          "type": "goal"
+        },
+        {
+          "team": "Costa Rica",
+          "player": "Francisco Calvo",
+          "minute": 68,
+          "added_minute": 0,
+          "type": "yellow_card"
+        },
+        {
+          "team": "Costa Rica",
+          "player": "Joel Campbell",
+          "minute": 90,
+          "added_minute": 7,
+          "type": "yellow_card"
+        }
+      ]
+    },
+    {
+      "stage": "Group",
+      "group": "E",
+      "date": "2022-11-27",
+      "time": "13:00",
+      "home": "Japan",
+      "away": "Costa Rica",
+      "normal_home": 0,
+      "normal_away": 1,
+      "extra_home": null,
+      "extra_away": null,
+      "penalty_home": null,
+      "penalty_away": null,
+      "stadium": "Ahmad bin Ali Stadium",
+      "city": "Al Rayyan",
+      "source_line": "worldcup_2022.txt:113",
+      "events": [
+        {
+          "team": "Japan",
+          "player": "Miki Yamane",
+          "minute": 44,
+          "added_minute": 0,
+          "type": "yellow_card"
+        },
+        {
+          "team": "Japan",
+          "player": "Kou Itakura",
+          "minute": 84,
+          "added_minute": 0,
+          "type": "yellow_card"
+        },
+        {
+          "team": "Japan",
+          "player": "Wataru Endo",
+          "minute": 90,
+          "added_minute": 3,
+          "type": "yellow_card"
+        },
+        {
+          "team": "Costa Rica",
+          "player": "Keysher Fuller",
+          "minute": 81,
+          "added_minute": 0,
+          "type": "goal"
+        },
+        {
+          "team": "Costa Rica",
+          "player": "Anthony Contreras",
+          "minute": 41,
+          "added_minute": 0,
+          "type": "yellow_card"
+        },
+        {
+          "team": "Costa Rica",
+          "player": "Celso Borges",
+          "minute": 61,
+          "added_minute": 0,
+          "type": "yellow_card"
+        },
+        {
+          "team": "Costa Rica",
+          "player": "Francisco Calvo",
+          "minute": 70,
+          "added_minute": 0,
+          "type": "yellow_card"
+        }
+      ]
+    },
+    {
+      "stage": "Group",
+      "group": "E",
+      "date": "2022-11-27",
+      "time": "22:00",
+      "home": "Spain",
+      "away": "Germany",
+      "normal_home": 1,
+      "normal_away": 1,
+      "extra_home": null,
+      "extra_away": null,
+      "penalty_home": null,
+      "penalty_away": null,
+      "stadium": "Al Bayt Stadium",
+      "city": "Al Khor",
+      "source_line": "worldcup_2022.txt:115",
+      "events": [
+        {
+          "team": "Spain",
+          "player": "Alvaro Morata",
+          "minute": 62,
+          "added_minute": 0,
+          "type": "goal"
+        },
+        {
+          "team": "Spain",
+          "player": "Sergio Busquets",
+          "minute": 44,
+          "added_minute": 0,
+          "type": "yellow_card"
+        },
+        {
+          "team": "Germany",
+          "player": "Niclas Fuellkrug",
+          "minute": 83,
+          "added_minute": 0,
+          "type": "goal"
+        },
+        {
+          "team": "Germany",
+          "player": "Thilo Kehrer",
+          "minute": 37,
+          "added_minute": 0,
+          "type": "yellow_card"
+        },
+        {
+          "team": "Germany",
+          "player": "Leon Goretzka",
+          "minute": 58,
+          "added_minute": 0,
+          "type": "yellow_card"
+        },
+        {
+          "team": "Germany",
+          "player": "Joshua Kimmich",
+          "minute": 60,
+          "added_minute": 0,
+          "type": "yellow_card"
+        }
+      ]
+    },
+    {
+      "stage": "Group",
+      "group": "E",
+      "date": "2022-12-01",
+      "time": "22:00",
+      "home": "Japan",
+      "away": "Spain",
+      "normal_home": 2,
+      "normal_away": 1,
+      "extra_home": null,
+      "extra_away": null,
+      "penalty_home": null,
+      "penalty_away": null,
+      "stadium": "Khalifa International Stadium",
+      "city": "Al Rayyan",
+      "source_line": "worldcup_2022.txt:119",
+      "events": [
+        {
+          "team": "Japan",
+          "player": "Ritsu Doan",
+          "minute": 48,
+          "added_minute": 0,
+          "type": "goal"
+        },
+        {
+          "team": "Japan",
+          "player": "Ao Tanaka",
+          "minute": 51,
+          "added_minute": 0,
+          "type": "goal"
+        },
+        {
+          "team": "Japan",
+          "player": "Kou Itakura",
+          "minute": 39,
+          "added_minute": 0,
+          "type": "yellow_card"
+        },
+        {
+          "team": "Japan",
+          "player": "Shogo Taniguchi",
+          "minute": 44,
+          "added_minute": 0,
+          "type": "yellow_card"
+        },
+        {
+          "team": "Japan",
+          "player": "Maya Yoshida",
+          "minute": 45,
+          "added_minute": 0,
+          "type": "yellow_card"
+        },
+        {
+          "team": "Spain",
+          "player": "Alvaro Morata",
+          "minute": 11,
+          "added_minute": 0,
+          "type": "goal"
+        }
+      ]
+    },
+    {
+      "stage": "Group",
+      "group": "E",
+      "date": "2022-12-01",
+      "time": "22:00",
+      "home": "Costa Rica",
+      "away": "Germany",
+      "normal_home": 2,
+      "normal_away": 4,
+      "extra_home": null,
+      "extra_away": null,
+      "penalty_home": null,
+      "penalty_away": null,
+      "stadium": "Al Bayt Stadium",
+      "city": "Al Khor",
+      "source_line": "worldcup_2022.txt:121",
+      "events": [
+        {
+          "team": "Costa Rica",
+          "player": "Yeltsin Tejeda",
+          "minute": 58,
+          "added_minute": 0,
+          "type": "goal"
+        },
+        {
+          "team": "Costa Rica",
+          "player": "Juan Vargas",
+          "minute": 70,
+          "added_minute": 0,
+          "type": "goal"
+        },
+        {
+          "team": "Costa Rica",
+          "player": "Oscar Duarte",
+          "minute": 77,
+          "added_minute": 0,
+          "type": "yellow_card"
+        },
+        {
+          "team": "Germany",
+          "player": "Serge Gnabry",
+          "minute": 10,
+          "added_minute": 0,
+          "type": "goal"
+        },
+        {
+          "team": "Germany",
+          "player": "Kai Havertz",
+          "minute": 73,
+          "added_minute": 0,
+          "type": "goal"
+        },
+        {
+          "team": "Germany",
+          "player": "Kai Havertz",
+          "minute": 85,
+          "added_minute": 0,
+          "type": "goal"
+        },
+        {
+          "team": "Germany",
+          "player": "Niclas Fuellkrug",
+          "minute": 89,
+          "added_minute": 0,
+          "type": "goal"
+        }
+      ]
+    },
+    {
+      "stage": "Group",
+      "group": "F",
+      "date": "2022-11-23",
+      "time": "13:00",
+      "home": "Morocco",
+      "away": "Croatia",
+      "normal_home": 0,
+      "normal_away": 0,
+      "extra_home": null,
+      "extra_away": null,
+      "penalty_home": null,
+      "penalty_away": null,
+      "stadium": "Al Bayt Stadium",
+      "city": "Al Khor",
+      "source_line": "worldcup_2022.txt:128",
+      "events": [
+        {
+          "team": "Morocco",
+          "player": "Sofyan Amrabat",
+          "minute": 78,
+          "added_minute": 0,
+          "type": "yellow_card"
+        }
+      ]
+    },
+    {
+      "stage": "Group",
+      "group": "F",
+      "date": "2022-11-23",
+      "time": "22:00",
+      "home": "Belgium",
+      "away": "Canada",
+      "normal_home": 1,
+      "normal_away": 0,
+      "extra_home": null,
+      "extra_away": null,
+      "penalty_home": null,
+      "penalty_away": null,
+      "stadium": "Ahmad bin Ali Stadium",
+      "city": "Al Rayyan",
+      "source_line": "worldcup_2022.txt:129",
+      "events": [
+        {
+          "team": "Belgium",
+          "player": "Michy Batshuayi",
+          "minute": 44,
+          "added_minute": 0,
+          "type": "goal"
+        },
+        {
+          "team": "Belgium",
+          "player": "Yannick Carrasco",
+          "minute": 9,
+          "added_minute": 0,
+          "type": "yellow_card"
+        },
+        {
+          "team": "Belgium",
+          "player": "Thomas Meunier",
+          "minute": 54,
+          "added_minute": 0,
+          "type": "yellow_card"
+        },
+        {
+          "team": "Belgium",
+          "player": "Amadou Onana",
+          "minute": 56,
+          "added_minute": 0,
+          "type": "yellow_card"
+        },
+        {
+          "team": "Canada",
+          "player": "Alphonso Davies",
+          "minute": 81,
+          "added_minute": 0,
+          "type": "yellow_card"
+        },
+        {
+          "team": "Canada",
+          "player": "Alistair Johnston",
+          "minute": 83,
+          "added_minute": 0,
+          "type": "yellow_card"
+        }
+      ]
+    },
+    {
+      "stage": "Group",
+      "group": "F",
+      "date": "2022-11-27",
+      "time": "16:00",
+      "home": "Belgium",
+      "away": "Morocco",
+      "normal_home": 0,
+      "normal_away": 2,
+      "extra_home": null,
+      "extra_away": null,
+      "penalty_home": null,
+      "penalty_away": null,
+      "stadium": "Al Thumama Stadium",
+      "city": "Doha",
+      "source_line": "worldcup_2022.txt:133",
+      "events": [
+        {
+          "team": "Belgium",
+          "player": "Amadou Onana",
+          "minute": 29,
+          "added_minute": 0,
+          "type": "yellow_card"
+        },
+        {
+          "team": "Morocco",
+          "player": "Romain Saiss",
+          "minute": 73,
+          "added_minute": 0,
+          "type": "goal"
+        },
+        {
+          "team": "Morocco",
+          "player": "Zakaria Aboukhlal",
+          "minute": 90,
+          "added_minute": 2,
+          "type": "goal"
+        },
+        {
+          "team": "Morocco",
+          "player": "Abdelhamid Sabiri",
+          "minute": 90,
+          "added_minute": 5,
+          "type": "yellow_card"
+        }
+      ]
+    },
+    {
+      "stage": "Group",
+      "group": "F",
+      "date": "2022-11-27",
+      "time": "19:00",
+      "home": "Croatia",
+      "away": "Canada",
+      "normal_home": 4,
+      "normal_away": 1,
+      "extra_home": null,
+      "extra_away": null,
+      "penalty_home": null,
+      "penalty_away": null,
+      "stadium": "Khalifa International Stadium",
+      "city": "Al Rayyan",
+      "source_line": "worldcup_2022.txt:135",
+      "events": [
+        {
+          "team": "Croatia",
+          "player": "Andrej Kramaric",
+          "minute": 36,
+          "added_minute": 0,
+          "type": "goal"
+        },
+        {
+          "team": "Croatia",
+          "player": "Marko Livaja",
+          "minute": 44,
+          "added_minute": 0,
+          "type": "goal"
+        },
+        {
+          "team": "Croatia",
+          "player": "Andrej Kramaric",
+          "minute": 70,
+          "added_minute": 0,
+          "type": "goal"
+        },
+        {
+          "team": "Croatia",
+          "player": "Lovro Majer",
+          "minute": 90,
+          "added_minute": 4,
+          "type": "goal"
+        },
+        {
+          "team": "Croatia",
+          "player": "Dejan Lovren",
+          "minute": 56,
+          "added_minute": 0,
+          "type": "yellow_card"
+        },
+        {
+          "team": "Croatia",
+          "player": "Luka Modric",
+          "minute": 85,
+          "added_minute": 0,
+          "type": "yellow_card"
+        },
+        {
+          "team": "Canada",
+          "player": "Alphonso Davies",
+          "minute": 2,
+          "added_minute": 0,
+          "type": "goal"
+        },
+        {
+          "team": "Canada",
+          "player": "Tajon Buchanan",
+          "minute": 52,
+          "added_minute": 0,
+          "type": "yellow_card"
+        },
+        {
+          "team": "Canada",
+          "player": "Kamal Miller",
+          "minute": 85,
+          "added_minute": 0,
+          "type": "yellow_card"
+        }
+      ]
+    },
+    {
+      "stage": "Group",
+      "group": "F",
+      "date": "2022-12-01",
+      "time": "18:00",
+      "home": "Croatia",
+      "away": "Belgium",
+      "normal_home": 0,
+      "normal_away": 0,
+      "extra_home": null,
+      "extra_away": null,
+      "penalty_home": null,
+      "penalty_away": null,
+      "stadium": "Ahmad bin Ali Stadium",
+      "city": "Al Rayyan",
+      "source_line": "worldcup_2022.txt:140",
+      "events": [
+        {
+          "team": "Belgium",
+          "player": "Leander Dendoncker",
+          "minute": 67,
+          "added_minute": 0,
+          "type": "yellow_card"
+        }
+      ]
+    },
+    {
+      "stage": "Group",
+      "group": "F",
+      "date": "2022-12-01",
+      "time": "18:00",
+      "home": "Canada",
+      "away": "Morocco",
+      "normal_home": 1,
+      "normal_away": 2,
+      "extra_home": null,
+      "extra_away": null,
+      "penalty_home": null,
+      "penalty_away": null,
+      "stadium": "Al Thumama Stadium",
+      "city": "Doha",
+      "source_line": "worldcup_2022.txt:141",
+      "events": [
+        {
+          "team": "Canada",
+          "player": "Nayef Aguerd",
+          "minute": 40,
+          "added_minute": 0,
+          "type": "own_goal"
+        },
+        {
+          "team": "Canada",
+          "player": "Junior Hoilett",
+          "minute": 7,
+          "added_minute": 0,
+          "type": "yellow_card"
+        },
+        {
+          "team": "Canada",
+          "player": "Jonathan Osorio",
+          "minute": 26,
+          "added_minute": 0,
+          "type": "yellow_card"
+        },
+        {
+          "team": "Canada",
+          "player": "Sam Adekugbe",
+          "minute": 45,
+          "added_minute": 2,
+          "type": "yellow_card"
+        },
+        {
+          "team": "Canada",
+          "player": "Steven Vitoria",
+          "minute": 84,
+          "added_minute": 0,
+          "type": "yellow_card"
+        },
+        {
+          "team": "Morocco",
+          "player": "Hakim Ziyech",
+          "minute": 4,
+          "added_minute": 0,
+          "type": "goal"
+        },
+        {
+          "team": "Morocco",
+          "player": "Youssef En Nesyri",
+          "minute": 23,
+          "added_minute": 0,
+          "type": "goal"
+        }
+      ]
+    },
+    {
+      "stage": "Group",
+      "group": "G",
+      "date": "2022-11-24",
+      "time": "13:00",
+      "home": "Switzerland",
+      "away": "Cameroon",
+      "normal_home": 1,
+      "normal_away": 0,
+      "extra_home": null,
+      "extra_away": null,
+      "penalty_home": null,
+      "penalty_away": null,
+      "stadium": "Al Janoub Stadium",
+      "city": "Al Wakrah",
+      "source_line": "worldcup_2022.txt:147",
+      "events": [
+        {
+          "team": "Switzerland",
+          "player": "Breel Embolo",
+          "minute": 48,
+          "added_minute": 0,
+          "type": "goal"
+        },
+        {
+          "team": "Switzerland",
+          "player": "Nico Elvedi",
+          "minute": 64,
+          "added_minute": 0,
+          "type": "yellow_card"
+        },
+        {
+          "team": "Switzerland",
+          "player": "Manuel Akanji",
+          "minute": 83,
+          "added_minute": 0,
+          "type": "yellow_card"
+        },
+        {
+          "team": "Cameroon",
+          "player": "Collins Fai",
+          "minute": 36,
+          "added_minute": 0,
+          "type": "yellow_card"
+        }
+      ]
+    },
+    {
+      "stage": "Group",
+      "group": "G",
+      "date": "2022-11-24",
+      "time": "22:00",
+      "home": "Brazil",
+      "away": "Serbia",
+      "normal_home": 2,
+      "normal_away": 0,
+      "extra_home": null,
+      "extra_away": null,
+      "penalty_home": null,
+      "penalty_away": null,
+      "stadium": "Lusail Iconic Stadium",
+      "city": "Lusail",
+      "source_line": "worldcup_2022.txt:149",
+      "events": [
+        {
+          "team": "Brazil",
+          "player": "Richarlison",
+          "minute": 62,
+          "added_minute": 0,
+          "type": "goal"
+        },
+        {
+          "team": "Brazil",
+          "player": "Richarlison",
+          "minute": 73,
+          "added_minute": 0,
+          "type": "goal"
+        },
+        {
+          "team": "Serbia",
+          "player": "Strahinja Pavlovic",
+          "minute": 7,
+          "added_minute": 0,
+          "type": "yellow_card"
+        },
+        {
+          "team": "Serbia",
+          "player": "Nemanja Gudelj",
+          "minute": 49,
+          "added_minute": 0,
+          "type": "yellow_card"
+        },
+        {
+          "team": "Serbia",
+          "player": "Sasa Lukic",
+          "minute": 64,
+          "added_minute": 0,
+          "type": "yellow_card"
+        }
+      ]
+    },
+    {
+      "stage": "Group",
+      "group": "G",
+      "date": "2022-11-28",
+      "time": "13:00",
+      "home": "Cameroon",
+      "away": "Serbia",
+      "normal_home": 3,
+      "normal_away": 3,
+      "extra_home": null,
+      "extra_away": null,
+      "penalty_home": null,
+      "penalty_away": null,
+      "stadium": "Al Janoub Stadium",
+      "city": "Al Wakrah",
+      "source_line": "worldcup_2022.txt:153",
+      "events": [
+        {
+          "team": "Cameroon",
+          "player": "Jean-Charles Castelletto",
+          "minute": 29,
+          "added_minute": 0,
+          "type": "goal"
+        },
+        {
+          "team": "Cameroon",
+          "player": "Vincent Aboubakar",
+          "minute": 63,
+          "added_minute": 0,
+          "type": "goal"
+        },
+        {
+          "team": "Cameroon",
+          "player": "Eric Maxim Choupo-Moting",
+          "minute": 66,
+          "added_minute": 0,
+          "type": "goal"
+        },
+        {
+          "team": "Cameroon",
+          "player": "Nicolas Nkoulou",
+          "minute": 24,
+          "added_minute": 0,
+          "type": "yellow_card"
+        },
+        {
+          "team": "Cameroon",
+          "player": "Christian Bassogog",
+          "minute": 30,
+          "added_minute": 0,
+          "type": "yellow_card"
+        },
+        {
+          "team": "Serbia",
+          "player": "Strahinja Pavlovic",
+          "minute": 45,
+          "added_minute": 1,
+          "type": "goal"
+        },
+        {
+          "team": "Serbia",
+          "player": "Sergej Milinkovic-Savic",
+          "minute": 45,
+          "added_minute": 3,
+          "type": "goal"
+        },
+        {
+          "team": "Serbia",
+          "player": "Aleksandar Mitrovic",
+          "minute": 53,
+          "added_minute": 0,
+          "type": "goal"
+        },
+        {
+          "team": "Serbia",
+          "player": "Nikola Milenkovic",
+          "minute": 90,
+          "added_minute": 3,
+          "type": "yellow_card"
+        }
+      ]
+    },
+    {
+      "stage": "Group",
+      "group": "G",
+      "date": "2022-11-28",
+      "time": "19:00",
+      "home": "Brazil",
+      "away": "Switzerland",
+      "normal_home": 1,
+      "normal_away": 0,
+      "extra_home": null,
+      "extra_away": null,
+      "penalty_home": null,
+      "penalty_away": null,
+      "stadium": "Stadium 974",
+      "city": "Doha",
+      "source_line": "worldcup_2022.txt:156",
+      "events": [
+        {
+          "team": "Brazil",
+          "player": "Casemiro",
+          "minute": 83,
+          "added_minute": 0,
+          "type": "goal"
+        },
+        {
+          "team": "Brazil",
+          "player": "Fred",
+          "minute": 52,
+          "added_minute": 0,
+          "type": "yellow_card"
+        },
+        {
+          "team": "Switzerland",
+          "player": "Fabian Rieder",
+          "minute": 50,
+          "added_minute": 0,
+          "type": "yellow_card"
+        }
+      ]
+    },
+    {
+      "stage": "Group",
+      "group": "G",
+      "date": "2022-12-02",
+      "time": "22:00",
+      "home": "Serbia",
+      "away": "Switzerland",
+      "normal_home": 2,
+      "normal_away": 3,
+      "extra_home": null,
+      "extra_away": null,
+      "penalty_home": null,
+      "penalty_away": null,
+      "stadium": "Stadium 974",
+      "city": "Doha",
+      "source_line": "worldcup_2022.txt:159",
+      "events": [
+        {
+          "team": "Serbia",
+          "player": "Aleksandar Mitrovic",
+          "minute": 26,
+          "added_minute": 0,
+          "type": "goal"
+        },
+        {
+          "team": "Serbia",
+          "player": "Dusan Vlahovic",
+          "minute": 35,
+          "added_minute": 0,
+          "type": "goal"
+        },
+        {
+          "team": "Serbia",
+          "player": "Sergej Milinkovic-Savic",
+          "minute": 47,
+          "added_minute": 0,
+          "type": "yellow_card"
+        },
+        {
+          "team": "Serbia",
+          "player": "Strahinja Pavlovic",
+          "minute": 56,
+          "added_minute": 0,
+          "type": "yellow_card"
+        },
+        {
+          "team": "Serbia",
+          "player": "Nemanja Gudelj",
+          "minute": 81,
+          "added_minute": 0,
+          "type": "yellow_card"
+        },
+        {
+          "team": "Serbia",
+          "player": "Aleksandar Mitrovic",
+          "minute": 82,
+          "added_minute": 0,
+          "type": "yellow_card"
+        },
+        {
+          "team": "Serbia",
+          "player": "Nikola Milenkovic",
+          "minute": 90,
+          "added_minute": 5,
+          "type": "yellow_card"
+        },
+        {
+          "team": "Serbia",
+          "player": "Sasa Lukic",
+          "minute": 90,
+          "added_minute": 10,
+          "type": "yellow_card"
+        },
+        {
+          "team": "Switzerland",
+          "player": "Xherdan Shaqiri",
+          "minute": 20,
+          "added_minute": 0,
+          "type": "goal"
+        },
+        {
+          "team": "Switzerland",
+          "player": "Breel Embolo",
+          "minute": 44,
+          "added_minute": 0,
+          "type": "goal"
+        },
+        {
+          "team": "Switzerland",
+          "player": "Remo Freuler",
+          "minute": 48,
+          "added_minute": 0,
+          "type": "goal"
+        },
+        {
+          "team": "Switzerland",
+          "player": "Silvan Widmer",
+          "minute": 15,
+          "added_minute": 0,
+          "type": "yellow_card"
+        },
+        {
+          "team": "Switzerland",
+          "player": "Ruben Vargas",
+          "minute": 34,
+          "added_minute": 0,
+          "type": "yellow_card"
+        },
+        {
+          "team": "Switzerland",
+          "player": "Granit Xhaka",
+          "minute": 90,
+          "added_minute": 5,
+          "type": "yellow_card"
+        },
+        {
+          "team": "Switzerland",
+          "player": "Fabian Schaer",
+          "minute": 90,
+          "added_minute": 9,
+          "type": "yellow_card"
+        }
+      ]
+    },
+    {
+      "stage": "Group",
+      "group": "G",
+      "date": "2022-12-02",
+      "time": "22:00",
+      "home": "Cameroon",
+      "away": "Brazil",
+      "normal_home": 1,
+      "normal_away": 0,
+      "extra_home": null,
+      "extra_away": null,
+      "penalty_home": null,
+      "penalty_away": null,
+      "stadium": "Lusail Iconic Stadium",
+      "city": "Lusail",
+      "source_line": "worldcup_2022.txt:162",
+      "events": [
+        {
+          "team": "Cameroon",
+          "player": "Vincent Aboubakar",
+          "minute": 90,
+          "added_minute": 2,
+          "type": "goal"
+        },
+        {
+          "team": "Cameroon",
+          "player": "Nouhou Tolo",
+          "minute": 6,
+          "added_minute": 0,
+          "type": "yellow_card"
+        },
+        {
+          "team": "Cameroon",
+          "player": "Pierre Kunde",
+          "minute": 28,
+          "added_minute": 0,
+          "type": "yellow_card"
+        },
+        {
+          "team": "Cameroon",
+          "player": "Collins Fai",
+          "minute": 32,
+          "added_minute": 0,
+          "type": "yellow_card"
+        },
+        {
+          "team": "Cameroon",
+          "player": "Vincent Aboubakar",
+          "minute": 81,
+          "added_minute": 0,
+          "type": "yellow_card"
+        },
+        {
+          "team": "Cameroon",
+          "player": "Vincent Aboubakar",
+          "minute": 90,
+          "added_minute": 3,
+          "type": "red_card"
+        },
+        {
+          "team": "Brazil",
+          "player": "Eder Militao",
+          "minute": 7,
+          "added_minute": 0,
+          "type": "yellow_card"
+        },
+        {
+          "team": "Brazil",
+          "player": "Bruno Guimaraes",
+          "minute": 85,
+          "added_minute": 0,
+          "type": "yellow_card"
+        }
+      ]
+    },
+    {
+      "stage": "Group",
+      "group": "H",
+      "date": "2022-11-24",
+      "time": "16:00",
+      "home": "Uruguay",
+      "away": "South Korea",
+      "normal_home": 0,
+      "normal_away": 0,
+      "extra_home": null,
+      "extra_away": null,
+      "penalty_home": null,
+      "penalty_away": null,
+      "stadium": "Education City Stadium",
+      "city": "Al Rayyan",
+      "source_line": "worldcup_2022.txt:168",
+      "events": [
+        {
+          "team": "Uruguay",
+          "player": "Martin Caceres",
+          "minute": 57,
+          "added_minute": 0,
+          "type": "yellow_card"
+        },
+        {
+          "team": "South Korea",
+          "player": "Cho Guesung",
+          "minute": 88,
+          "added_minute": 0,
+          "type": "yellow_card"
+        }
+      ]
+    },
+    {
+      "stage": "Group",
+      "group": "H",
+      "date": "2022-11-24",
+      "time": "19:00",
+      "home": "Portugal",
+      "away": "Ghana",
+      "normal_home": 3,
+      "normal_away": 2,
+      "extra_home": null,
+      "extra_away": null,
+      "penalty_home": null,
+      "penalty_away": null,
+      "stadium": "Stadium 974",
+      "city": "Doha",
+      "source_line": "worldcup_2022.txt:169",
+      "events": [
+        {
+          "team": "Portugal",
+          "player": "Cristiano Ronaldo",
+          "minute": 65,
+          "added_minute": 0,
+          "type": "penalty_goal"
+        },
+        {
+          "team": "Portugal",
+          "player": "Joao Felix",
+          "minute": 78,
+          "added_minute": 0,
+          "type": "goal"
+        },
+        {
+          "team": "Portugal",
+          "player": "Rafael Leao",
+          "minute": 80,
+          "added_minute": 0,
+          "type": "goal"
+        },
+        {
+          "team": "Portugal",
+          "player": "Danilo",
+          "minute": 90,
+          "added_minute": 1,
+          "type": "yellow_card"
+        },
+        {
+          "team": "Portugal",
+          "player": "Bruno Fernandes",
+          "minute": 90,
+          "added_minute": 5,
+          "type": "yellow_card"
+        },
+        {
+          "team": "Ghana",
+          "player": "Andre Ayew",
+          "minute": 73,
+          "added_minute": 0,
+          "type": "goal"
+        },
+        {
+          "team": "Ghana",
+          "player": "Osman Bukari",
+          "minute": 89,
+          "added_minute": 0,
+          "type": "goal"
+        },
+        {
+          "team": "Ghana",
+          "player": "Kudus Mohammed",
+          "minute": 45,
+          "added_minute": 1,
+          "type": "yellow_card"
+        },
+        {
+          "team": "Ghana",
+          "player": "Andre Ayew",
+          "minute": 49,
+          "added_minute": 0,
+          "type": "yellow_card"
+        },
+        {
+          "team": "Ghana",
+          "player": "Seidu Alidu",
+          "minute": 57,
+          "added_minute": 0,
+          "type": "yellow_card"
+        },
+        {
+          "team": "Ghana",
+          "player": "Inaki Williams",
+          "minute": 90,
+          "added_minute": 1,
+          "type": "yellow_card"
+        }
+      ]
+    },
+    {
+      "stage": "Group",
+      "group": "H",
+      "date": "2022-11-28",
+      "time": "16:00",
+      "home": "South Korea",
+      "away": "Ghana",
+      "normal_home": 2,
+      "normal_away": 3,
+      "extra_home": null,
+      "extra_away": null,
+      "penalty_home": null,
+      "penalty_away": null,
+      "stadium": "Education City Stadium",
+      "city": "Al Rayyan",
+      "source_line": "worldcup_2022.txt:174",
+      "events": [
+        {
+          "team": "South Korea",
+          "player": "Cho Guesung",
+          "minute": 58,
+          "added_minute": 0,
+          "type": "goal"
+        },
+        {
+          "team": "South Korea",
+          "player": "Cho Guesung",
+          "minute": 61,
+          "added_minute": 0,
+          "type": "goal"
+        },
+        {
+          "team": "South Korea",
+          "player": "Jung Wooyoung",
+          "minute": 27,
+          "added_minute": 0,
+          "type": "yellow_card"
+        },
+        {
+          "team": "South Korea",
+          "player": "Kim Younggwon",
+          "minute": 77,
+          "added_minute": 0,
+          "type": "yellow_card"
+        },
+        {
+          "team": "Ghana",
+          "player": "Mohammed Salisu",
+          "minute": 24,
+          "added_minute": 0,
+          "type": "goal"
+        },
+        {
+          "team": "Ghana",
+          "player": "Kudus Mohammed",
+          "minute": 34,
+          "added_minute": 0,
+          "type": "goal"
+        },
+        {
+          "team": "Ghana",
+          "player": "Kudus Mohammed",
+          "minute": 68,
+          "added_minute": 0,
+          "type": "goal"
+        },
+        {
+          "team": "Ghana",
+          "player": "Daniel Amartey",
+          "minute": 21,
+          "added_minute": 0,
+          "type": "yellow_card"
+        },
+        {
+          "team": "Ghana",
+          "player": "Tariq Lamptey",
+          "minute": 73,
+          "added_minute": 0,
+          "type": "yellow_card"
+        }
+      ]
+    },
+    {
+      "stage": "Group",
+      "group": "H",
+      "date": "2022-11-28",
+      "time": "22:00",
+      "home": "Portugal",
+      "away": "Uruguay",
+      "normal_home": 2,
+      "normal_away": 0,
+      "extra_home": null,
+      "extra_away": null,
+      "penalty_home": null,
+      "penalty_away": null,
+      "stadium": "Lusail Iconic Stadium",
+      "city": "Lusail",
+      "source_line": "worldcup_2022.txt:177",
+      "events": [
+        {
+          "team": "Portugal",
+          "player": "Bruno Fernandes",
+          "minute": 54,
+          "added_minute": 0,
+          "type": "goal"
+        },
+        {
+          "team": "Portugal",
+          "player": "Bruno Fernandes",
+          "minute": 90,
+          "added_minute": 3,
+          "type": "penalty_goal"
+        },
+        {
+          "team": "Portugal",
+          "player": "Ruben Neves",
+          "minute": 38,
+          "added_minute": 0,
+          "type": "yellow_card"
+        },
+        {
+          "team": "Portugal",
+          "player": "Joao Felix",
+          "minute": 77,
+          "added_minute": 0,
+          "type": "yellow_card"
+        },
+        {
+          "team": "Portugal",
+          "player": "Ruben Dias",
+          "minute": 89,
+          "added_minute": 0,
+          "type": "yellow_card"
+        },
+        {
+          "team": "Uruguay",
+          "player": "Rodrigo Bentancur",
+          "minute": 6,
+          "added_minute": 0,
+          "type": "yellow_card"
+        },
+        {
+          "team": "Uruguay",
+          "player": "Mathias Olivera",
+          "minute": 44,
+          "added_minute": 0,
+          "type": "yellow_card"
+        }
+      ]
+    },
+    {
+      "stage": "Group",
+      "group": "H",
+      "date": "2022-12-02",
+      "time": "18:00",
+      "home": "Ghana",
+      "away": "Uruguay",
+      "normal_home": 0,
+      "normal_away": 2,
+      "extra_home": null,
+      "extra_away": null,
+      "penalty_home": null,
+      "penalty_away": null,
+      "stadium": "Al Janoub Stadium",
+      "city": "Al Wakrah",
+      "source_line": "worldcup_2022.txt:180",
+      "events": [
+        {
+          "team": "Ghana",
+          "player": "Kamaldeen Sulemana",
+          "minute": 86,
+          "added_minute": 0,
+          "type": "yellow_card"
+        },
+        {
+          "team": "Ghana",
+          "player": "Seidu Alidu",
+          "minute": 90,
+          "added_minute": 9,
+          "type": "yellow_card"
+        },
+        {
+          "team": "Uruguay",
+          "player": "Giorgian De Arrascaeta",
+          "minute": 26,
+          "added_minute": 0,
+          "type": "goal"
+        },
+        {
+          "team": "Uruguay",
+          "player": "Giorgian De Arrascaeta",
+          "minute": 32,
+          "added_minute": 0,
+          "type": "goal"
+        },
+        {
+          "team": "Uruguay",
+          "player": "Darwin Nunez",
+          "minute": 20,
+          "added_minute": 0,
+          "type": "yellow_card"
+        },
+        {
+          "team": "Uruguay",
+          "player": "Luis Suarez",
+          "minute": 60,
+          "added_minute": 0,
+          "type": "yellow_card"
+        },
+        {
+          "team": "Uruguay",
+          "player": "Sebastian Coates",
+          "minute": 87,
+          "added_minute": 0,
+          "type": "yellow_card"
+        },
+        {
+          "team": "Uruguay",
+          "player": "Edinson Cavani",
+          "minute": 90,
+          "added_minute": 10,
+          "type": "yellow_card"
+        },
+        {
+          "team": "Uruguay",
+          "player": "Jose Gimenez",
+          "minute": 90,
+          "added_minute": 10,
+          "type": "yellow_card"
+        }
+      ]
+    },
+    {
+      "stage": "Group",
+      "group": "H",
+      "date": "2022-12-02",
+      "time": "18:00",
+      "home": "South Korea",
+      "away": "Portugal",
+      "normal_home": 2,
+      "normal_away": 1,
+      "extra_home": null,
+      "extra_away": null,
+      "penalty_home": null,
+      "penalty_away": null,
+      "stadium": "Lusail Iconic Stadium",
+      "city": "Lusail",
+      "source_line": "worldcup_2022.txt:182",
+      "events": [
+        {
+          "team": "South Korea",
+          "player": "Kim Younggwon",
+          "minute": 27,
+          "added_minute": 0,
+          "type": "goal"
+        },
+        {
+          "team": "South Korea",
+          "player": "Hwang Heechan",
+          "minute": 90,
+          "added_minute": 1,
+          "type": "goal"
+        },
+        {
+          "team": "South Korea",
+          "player": "Lee Kangin",
+          "minute": 36,
+          "added_minute": 0,
+          "type": "yellow_card"
+        },
+        {
+          "team": "South Korea",
+          "player": "Hwang Heechan",
+          "minute": 90,
+          "added_minute": 2,
+          "type": "yellow_card"
+        },
+        {
+          "team": "Portugal",
+          "player": "Ricardo Horta",
+          "minute": 5,
+          "added_minute": 0,
+          "type": "goal"
+        }
+      ]
+    },
+    {
+      "stage": "Round of 16",
+      "group": null,
+      "date": "2022-12-03",
+      "time": "18:00",
+      "home": "Netherlands",
+      "away": "USA",
+      "normal_home": 3,
+      "normal_away": 1,
+      "extra_home": null,
+      "extra_away": null,
+      "penalty_home": null,
+      "penalty_away": null,
+      "stadium": "Khalifa International Stadium",
+      "city": "Al Rayyan",
+      "source_line": "worldcup_2022_finals.txt:13",
+      "events": [
+        {
+          "team": "Netherlands",
+          "player": "Memphis Depay",
+          "minute": 10,
+          "added_minute": 0,
+          "type": "goal"
+        },
+        {
+          "team": "Netherlands",
+          "player": "Daley Blind",
+          "minute": 45,
+          "added_minute": 1,
+          "type": "goal"
+        },
+        {
+          "team": "Netherlands",
+          "player": "Denzel Dumfries",
+          "minute": 81,
+          "added_minute": 0,
+          "type": "goal"
+        },
+        {
+          "team": "Netherlands",
+          "player": "Teun Koopmeiners",
+          "minute": 60,
+          "added_minute": 0,
+          "type": "yellow_card"
+        },
+        {
+          "team": "Netherlands",
+          "player": "Frenkie De Jong",
+          "minute": 87,
+          "added_minute": 0,
+          "type": "yellow_card"
+        },
+        {
+          "team": "USA",
+          "player": "Haji Wright",
+          "minute": 76,
+          "added_minute": 0,
+          "type": "goal"
+        }
+      ]
+    },
+    {
+      "stage": "Round of 16",
+      "group": null,
+      "date": "2022-12-03",
+      "time": "22:00",
+      "home": "Argentina",
+      "away": "Australia",
+      "normal_home": 2,
+      "normal_away": 1,
+      "extra_home": null,
+      "extra_away": null,
+      "penalty_home": null,
+      "penalty_away": null,
+      "stadium": "Ahmad bin Ali Stadium",
+      "city": "Al Rayyan",
+      "source_line": "worldcup_2022_finals.txt:15",
+      "events": [
+        {
+          "team": "Argentina",
+          "player": "Lionel Messi",
+          "minute": 35,
+          "added_minute": 0,
+          "type": "goal"
+        },
+        {
+          "team": "Argentina",
+          "player": "Julian Alvarez",
+          "minute": 57,
+          "added_minute": 0,
+          "type": "goal"
+        },
+        {
+          "team": "Australia",
+          "player": "Enzo Fernandez",
+          "minute": 77,
+          "added_minute": 0,
+          "type": "own_goal"
+        },
+        {
+          "team": "Australia",
+          "player": "Jackson Irvine",
+          "minute": 15,
+          "added_minute": 0,
+          "type": "yellow_card"
+        },
+        {
+          "team": "Australia",
+          "player": "Milos Degenek",
+          "minute": 38,
+          "added_minute": 0,
+          "type": "yellow_card"
+        }
+      ]
+    },
+    {
+      "stage": "Round of 16",
+      "group": null,
+      "date": "2022-12-04",
+      "time": "18:00",
+      "home": "France",
+      "away": "Poland",
+      "normal_home": 3,
+      "normal_away": 1,
+      "extra_home": null,
+      "extra_away": null,
+      "penalty_home": null,
+      "penalty_away": null,
+      "stadium": "Al Thumama Stadium",
+      "city": "Doha",
+      "source_line": "worldcup_2022_finals.txt:19",
+      "events": [
+        {
+          "team": "France",
+          "player": "Olivier Giroud",
+          "minute": 44,
+          "added_minute": 0,
+          "type": "goal"
+        },
+        {
+          "team": "France",
+          "player": "Kylian Mbappe",
+          "minute": 74,
+          "added_minute": 0,
+          "type": "goal"
+        },
+        {
+          "team": "France",
+          "player": "Kylian Mbappe",
+          "minute": 90,
+          "added_minute": 1,
+          "type": "goal"
+        },
+        {
+          "team": "France",
+          "player": "Aurelien Tchouameni",
+          "minute": 32,
+          "added_minute": 0,
+          "type": "yellow_card"
+        },
+        {
+          "team": "Poland",
+          "player": "Robert Lewandowski",
+          "minute": 90,
+          "added_minute": 9,
+          "type": "penalty_goal"
+        },
+        {
+          "team": "Poland",
+          "player": "Bartosz Bereszynski",
+          "minute": 47,
+          "added_minute": 0,
+          "type": "yellow_card"
+        },
+        {
+          "team": "Poland",
+          "player": "Matty Cash",
+          "minute": 88,
+          "added_minute": 0,
+          "type": "yellow_card"
+        }
+      ]
+    },
+    {
+      "stage": "Round of 16",
+      "group": null,
+      "date": "2022-12-04",
+      "time": "22:00",
+      "home": "England",
+      "away": "Senegal",
+      "normal_home": 3,
+      "normal_away": 0,
+      "extra_home": null,
+      "extra_away": null,
+      "penalty_home": null,
+      "penalty_away": null,
+      "stadium": "Al Bayt Stadium",
+      "city": "Al Khor",
+      "source_line": "worldcup_2022_finals.txt:21",
+      "events": [
+        {
+          "team": "England",
+          "player": "Jordan Henderson",
+          "minute": 38,
+          "added_minute": 0,
+          "type": "goal"
+        },
+        {
+          "team": "England",
+          "player": "Harry Kane",
+          "minute": 45,
+          "added_minute": 3,
+          "type": "goal"
+        },
+        {
+          "team": "England",
+          "player": "Bukayo Saka",
+          "minute": 57,
+          "added_minute": 0,
+          "type": "goal"
+        },
+        {
+          "team": "Senegal",
+          "player": "Kalidou Koulibaly",
+          "minute": 76,
+          "added_minute": 0,
+          "type": "yellow_card"
+        }
+      ]
+    },
+    {
+      "stage": "Round of 16",
+      "group": null,
+      "date": "2022-12-05",
+      "time": "18:00",
+      "home": "Japan",
+      "away": "Croatia",
+      "normal_home": 1,
+      "normal_away": 1,
+      "extra_home": 0,
+      "extra_away": 0,
+      "penalty_home": 1,
+      "penalty_away": 3,
+      "stadium": "Al Janoub Stadium",
+      "city": "Al Wakrah",
+      "source_line": "worldcup_2022_finals.txt:25",
+      "events": [
+        {
+          "team": "Japan",
+          "player": "Daizen Maeda",
+          "minute": 43,
+          "added_minute": 0,
+          "type": "goal"
+        },
+        {
+          "team": "Croatia",
+          "player": "Ivan Perisic",
+          "minute": 55,
+          "added_minute": 0,
+          "type": "goal"
+        },
+        {
+          "team": "Croatia",
+          "player": "Mateo Kovacic",
+          "minute": 90,
+          "added_minute": 0,
+          "type": "yellow_card"
+        },
+        {
+          "team": "Croatia",
+          "player": "Borna Barisic",
+          "minute": 116,
+          "added_minute": 0,
+          "type": "yellow_card"
+        },
+        {
+          "team": "Japan",
+          "player": "Takumi Minamino",
+          "minute": 120,
+          "added_minute": 1,
+          "type": "shootout_miss"
+        },
+        {
+          "team": "Croatia",
+          "player": "Nikola Vlasic",
+          "minute": 120,
+          "added_minute": 2,
+          "type": "shootout_goal"
+        },
+        {
+          "team": "Japan",
+          "player": "Kaoru Mitoma",
+          "minute": 120,
+          "added_minute": 3,
+          "type": "shootout_miss"
+        },
+        {
+          "team": "Croatia",
+          "player": "Marcelo Brozovic",
+          "minute": 120,
+          "added_minute": 4,
+          "type": "shootout_goal"
+        },
+        {
+          "team": "Japan",
+          "player": "Takuma Asano",
+          "minute": 120,
+          "added_minute": 5,
+          "type": "shootout_goal"
+        },
+        {
+          "team": "Croatia",
+          "player": "Marko Livaja",
+          "minute": 120,
+          "added_minute": 6,
+          "type": "shootout_miss"
+        },
+        {
+          "team": "Japan",
+          "player": "Maya Yoshida",
+          "minute": 120,
+          "added_minute": 7,
+          "type": "shootout_miss"
+        },
+        {
+          "team": "Croatia",
+          "player": "Mario Pasalic",
+          "minute": 120,
+          "added_minute": 8,
+          "type": "shootout_goal"
+        }
+      ]
+    },
+    {
+      "stage": "Round of 16",
+      "group": null,
+      "date": "2022-12-05",
+      "time": "22:00",
+      "home": "Brazil",
+      "away": "South Korea",
+      "normal_home": 4,
+      "normal_away": 1,
+      "extra_home": null,
+      "extra_away": null,
+      "penalty_home": null,
+      "penalty_away": null,
+      "stadium": "Stadium 974",
+      "city": "Doha",
+      "source_line": "worldcup_2022_finals.txt:27",
+      "events": [
+        {
+          "team": "Brazil",
+          "player": "Vinicius Jr",
+          "minute": 7,
+          "added_minute": 0,
+          "type": "goal"
+        },
+        {
+          "team": "Brazil",
+          "player": "Neymar",
+          "minute": 13,
+          "added_minute": 0,
+          "type": "penalty_goal"
+        },
+        {
+          "team": "Brazil",
+          "player": "Richarlison",
+          "minute": 29,
+          "added_minute": 0,
+          "type": "goal"
+        },
+        {
+          "team": "Brazil",
+          "player": "Lucas Paqueta",
+          "minute": 36,
+          "added_minute": 0,
+          "type": "goal"
+        },
+        {
+          "team": "South Korea",
+          "player": "Paik Seungho",
+          "minute": 76,
+          "added_minute": 0,
+          "type": "goal"
+        },
+        {
+          "team": "South Korea",
+          "player": "Jung Wooyoung",
+          "minute": 44,
+          "added_minute": 0,
+          "type": "yellow_card"
+        }
+      ]
+    },
+    {
+      "stage": "Round of 16",
+      "group": null,
+      "date": "2022-12-06",
+      "time": "18:00",
+      "home": "Morocco",
+      "away": "Spain",
+      "normal_home": 0,
+      "normal_away": 0,
+      "extra_home": 0,
+      "extra_away": 0,
+      "penalty_home": 3,
+      "penalty_away": 0,
+      "stadium": "Education City Stadium",
+      "city": "Al Rayyan",
+      "source_line": "worldcup_2022_finals.txt:31",
+      "events": [
+        {
+          "team": "Morocco",
+          "player": "Romain Saiss",
+          "minute": 90,
+          "added_minute": 0,
+          "type": "yellow_card"
+        },
+        {
+          "team": "Spain",
+          "player": "Aymeric Laporte",
+          "minute": 77,
+          "added_minute": 0,
+          "type": "yellow_card"
+        },
+        {
+          "team": "Morocco",
+          "player": "Abdelhamid Sabiri",
+          "minute": 120,
+          "added_minute": 1,
+          "type": "shootout_goal"
+        },
+        {
+          "team": "Spain",
+          "player": "Pablo Sarabia",
+          "minute": 120,
+          "added_minute": 2,
+          "type": "shootout_miss"
+        },
+        {
+          "team": "Morocco",
+          "player": "Hakim Ziyech",
+          "minute": 120,
+          "added_minute": 3,
+          "type": "shootout_goal"
+        },
+        {
+          "team": "Spain",
+          "player": "Carlos Soler",
+          "minute": 120,
+          "added_minute": 4,
+          "type": "shootout_miss"
+        },
+        {
+          "team": "Morocco",
+          "player": "Badr Benoun",
+          "minute": 120,
+          "added_minute": 5,
+          "type": "shootout_miss"
+        },
+        {
+          "team": "Spain",
+          "player": "Sergio Busquets",
+          "minute": 120,
+          "added_minute": 6,
+          "type": "shootout_miss"
+        },
+        {
+          "team": "Morocco",
+          "player": "Achraf Hakimi",
+          "minute": 120,
+          "added_minute": 7,
+          "type": "shootout_goal"
+        }
+      ]
+    },
+    {
+      "stage": "Round of 16",
+      "group": null,
+      "date": "2022-12-06",
+      "time": "22:00",
+      "home": "Portugal",
+      "away": "Switzerland",
+      "normal_home": 6,
+      "normal_away": 1,
+      "extra_home": null,
+      "extra_away": null,
+      "penalty_home": null,
+      "penalty_away": null,
+      "stadium": "Lusail Iconic Stadium",
+      "city": "Lusail",
+      "source_line": "worldcup_2022_finals.txt:32",
+      "events": [
+        {
+          "team": "Portugal",
+          "player": "Goncalo Ramos",
+          "minute": 17,
+          "added_minute": 0,
+          "type": "goal"
+        },
+        {
+          "team": "Portugal",
+          "player": "Pepe",
+          "minute": 33,
+          "added_minute": 0,
+          "type": "goal"
+        },
+        {
+          "team": "Portugal",
+          "player": "Goncalo Ramos",
+          "minute": 51,
+          "added_minute": 0,
+          "type": "goal"
+        },
+        {
+          "team": "Portugal",
+          "player": "Raphael Guerreiro",
+          "minute": 55,
+          "added_minute": 0,
+          "type": "goal"
+        },
+        {
+          "team": "Portugal",
+          "player": "Goncalo Ramos",
+          "minute": 67,
+          "added_minute": 0,
+          "type": "goal"
+        },
+        {
+          "team": "Portugal",
+          "player": "Rafael Leao",
+          "minute": 90,
+          "added_minute": 2,
+          "type": "goal"
+        },
+        {
+          "team": "Switzerland",
+          "player": "Manuel Akanji",
+          "minute": 58,
+          "added_minute": 0,
+          "type": "goal"
+        },
+        {
+          "team": "Switzerland",
+          "player": "Fabian Schaer",
+          "minute": 43,
+          "added_minute": 0,
+          "type": "yellow_card"
+        },
+        {
+          "team": "Switzerland",
+          "player": "Eray Comert",
+          "minute": 59,
+          "added_minute": 0,
+          "type": "yellow_card"
+        }
+      ]
+    },
+    {
+      "stage": "Quarter-finals",
+      "group": null,
+      "date": "2022-12-09",
+      "time": "18:00",
+      "home": "Croatia",
+      "away": "Brazil",
+      "normal_home": 0,
+      "normal_away": 0,
+      "extra_home": 1,
+      "extra_away": 1,
+      "penalty_home": 4,
+      "penalty_away": 2,
+      "stadium": "Education City Stadium",
+      "city": "Al Rayyan",
+      "source_line": "worldcup_2022_finals.txt:39",
+      "events": [
+        {
+          "team": "Croatia",
+          "player": "Bruno Petkovic",
+          "minute": 117,
+          "added_minute": 0,
+          "type": "goal"
+        },
+        {
+          "team": "Croatia",
+          "player": "Marcelo Brozovic",
+          "minute": 31,
+          "added_minute": 0,
+          "type": "yellow_card"
+        },
+        {
+          "team": "Croatia",
+          "player": "Bruno Petkovic",
+          "minute": 117,
+          "added_minute": 0,
+          "type": "yellow_card"
+        },
+        {
+          "team": "Brazil",
+          "player": "Neymar",
+          "minute": 105,
+          "added_minute": 1,
+          "type": "goal"
+        },
+        {
+          "team": "Brazil",
+          "player": "Danilo",
+          "minute": 25,
+          "added_minute": 0,
+          "type": "yellow_card"
+        },
+        {
+          "team": "Brazil",
+          "player": "Casemiro",
+          "minute": 68,
+          "added_minute": 0,
+          "type": "yellow_card"
+        },
+        {
+          "team": "Brazil",
+          "player": "Marquinhos",
+          "minute": 77,
+          "added_minute": 0,
+          "type": "yellow_card"
+        },
+        {
+          "team": "Croatia",
+          "player": "Nikola Vlasic",
+          "minute": 120,
+          "added_minute": 1,
+          "type": "shootout_goal"
+        },
+        {
+          "team": "Brazil",
+          "player": "Rodrygo",
+          "minute": 120,
+          "added_minute": 2,
+          "type": "shootout_miss"
+        },
+        {
+          "team": "Croatia",
+          "player": "Lovro Majer",
+          "minute": 120,
+          "added_minute": 3,
+          "type": "shootout_goal"
+        },
+        {
+          "team": "Brazil",
+          "player": "Casemiro",
+          "minute": 120,
+          "added_minute": 4,
+          "type": "shootout_goal"
+        },
+        {
+          "team": "Croatia",
+          "player": "Luka Modric",
+          "minute": 120,
+          "added_minute": 5,
+          "type": "shootout_goal"
+        },
+        {
+          "team": "Brazil",
+          "player": "Pedro",
+          "minute": 120,
+          "added_minute": 6,
+          "type": "shootout_goal"
+        },
+        {
+          "team": "Croatia",
+          "player": "Mislav Orsic",
+          "minute": 120,
+          "added_minute": 7,
+          "type": "shootout_goal"
+        },
+        {
+          "team": "Brazil",
+          "player": "Marquinhos",
+          "minute": 120,
+          "added_minute": 8,
+          "type": "shootout_miss"
+        }
+      ]
+    },
+    {
+      "stage": "Quarter-finals",
+      "group": null,
+      "date": "2022-12-09",
+      "time": "22:00",
+      "home": "Netherlands",
+      "away": "Argentina",
+      "normal_home": 2,
+      "normal_away": 2,
+      "extra_home": 0,
+      "extra_away": 0,
+      "penalty_home": 3,
+      "penalty_away": 4,
+      "stadium": "Lusail Iconic Stadium",
+      "city": "Lusail",
+      "source_line": "worldcup_2022_finals.txt:41",
+      "events": [
+        {
+          "team": "Netherlands",
+          "player": "Wout Weghorst",
+          "minute": 83,
+          "added_minute": 0,
+          "type": "goal"
+        },
+        {
+          "team": "Netherlands",
+          "player": "Wout Weghorst",
+          "minute": 90,
+          "added_minute": 11,
+          "type": "goal"
+        },
+        {
+          "team": "Netherlands",
+          "player": "Jurrien Timber",
+          "minute": 43,
+          "added_minute": 0,
+          "type": "yellow_card"
+        },
+        {
+          "team": "Netherlands",
+          "player": "Wout Weghorst",
+          "minute": 45,
+          "added_minute": 2,
+          "type": "yellow_card"
+        },
+        {
+          "team": "Netherlands",
+          "player": "Memphis Depay",
+          "minute": 76,
+          "added_minute": 0,
+          "type": "yellow_card"
+        },
+        {
+          "team": "Netherlands",
+          "player": "Steven Berghuis",
+          "minute": 88,
+          "added_minute": 0,
+          "type": "yellow_card"
+        },
+        {
+          "team": "Netherlands",
+          "player": "Steven Bergwijn",
+          "minute": 91,
+          "added_minute": 0,
+          "type": "yellow_card"
+        },
+        {
+          "team": "Netherlands",
+          "player": "Denzel Dumfries",
+          "minute": 128,
+          "added_minute": 0,
+          "type": "yellow_card"
+        },
+        {
+          "team": "Netherlands",
+          "player": "Denzel Dumfries",
+          "minute": 129,
+          "added_minute": 0,
+          "type": "red_card"
+        },
+        {
+          "team": "Netherlands",
+          "player": "Noa Lang",
+          "minute": 129,
+          "added_minute": 0,
+          "type": "yellow_card"
+        },
+        {
+          "team": "Argentina",
+          "player": "Nahuel Molina",
+          "minute": 35,
+          "added_minute": 0,
+          "type": "goal"
+        },
+        {
+          "team": "Argentina",
+          "player": "Lionel Messi",
+          "minute": 73,
+          "added_minute": 0,
+          "type": "penalty_goal"
+        },
+        {
+          "team": "Argentina",
+          "player": "Marcos Acuna",
+          "minute": 43,
+          "added_minute": 0,
+          "type": "yellow_card"
+        },
+        {
+          "team": "Argentina",
+          "player": "Cristian Romero",
+          "minute": 45,
+          "added_minute": 0,
+          "type": "yellow_card"
+        },
+        {
+          "team": "Argentina",
+          "player": "Lisandro Martinez",
+          "minute": 76,
+          "added_minute": 0,
+          "type": "yellow_card"
+        },
+        {
+          "team": "Argentina",
+          "player": "Leandro Paredes",
+          "minute": 89,
+          "added_minute": 0,
+          "type": "yellow_card"
+        },
+        {
+          "team": "Argentina",
+          "player": "Lionel Messi",
+          "minute": 90,
+          "added_minute": 10,
+          "type": "yellow_card"
+        },
+        {
+          "team": "Argentina",
+          "player": "Nicolas Otamendi",
+          "minute": 90,
+          "added_minute": 12,
+          "type": "yellow_card"
+        },
+        {
+          "team": "Argentina",
+          "player": "Gonzalo Montiel",
+          "minute": 109,
+          "added_minute": 0,
+          "type": "yellow_card"
+        },
+        {
+          "team": "Argentina",
+          "player": "German Pezzella",
+          "minute": 112,
+          "added_minute": 0,
+          "type": "yellow_card"
+        },
+        {
+          "team": "Netherlands",
+          "player": "Virgil Van Dijk",
+          "minute": 120,
+          "added_minute": 1,
+          "type": "shootout_miss"
+        },
+        {
+          "team": "Argentina",
+          "player": "Lionel Messi",
+          "minute": 120,
+          "added_minute": 2,
+          "type": "shootout_goal"
+        },
+        {
+          "team": "Netherlands",
+          "player": "Steven Berghuis",
+          "minute": 120,
+          "added_minute": 3,
+          "type": "shootout_miss"
+        },
+        {
+          "team": "Argentina",
+          "player": "Leandro Paredes",
+          "minute": 120,
+          "added_minute": 4,
+          "type": "shootout_goal"
+        },
+        {
+          "team": "Netherlands",
+          "player": "Teun Koopmeiners",
+          "minute": 120,
+          "added_minute": 5,
+          "type": "shootout_goal"
+        },
+        {
+          "team": "Argentina",
+          "player": "Gonzalo Montiel",
+          "minute": 120,
+          "added_minute": 6,
+          "type": "shootout_goal"
+        },
+        {
+          "team": "Netherlands",
+          "player": "Wout Weghorst",
+          "minute": 120,
+          "added_minute": 7,
+          "type": "shootout_goal"
+        },
+        {
+          "team": "Argentina",
+          "player": "Enzo Fernandez",
+          "minute": 120,
+          "added_minute": 8,
+          "type": "shootout_miss"
+        },
+        {
+          "team": "Netherlands",
+          "player": "Luuk De Jong",
+          "minute": 120,
+          "added_minute": 9,
+          "type": "shootout_goal"
+        },
+        {
+          "team": "Argentina",
+          "player": "Lautaro Martinez",
+          "minute": 120,
+          "added_minute": 10,
+          "type": "shootout_goal"
+        }
+      ]
+    },
+    {
+      "stage": "Quarter-finals",
+      "group": null,
+      "date": "2022-12-10",
+      "time": "18:00",
+      "home": "Morocco",
+      "away": "Portugal",
+      "normal_home": 1,
+      "normal_away": 0,
+      "extra_home": null,
+      "extra_away": null,
+      "penalty_home": null,
+      "penalty_away": null,
+      "stadium": "Al Thumama Stadium",
+      "city": "Doha",
+      "source_line": "worldcup_2022_finals.txt:46",
+      "events": [
+        {
+          "team": "Morocco",
+          "player": "Youssef En Nesyri",
+          "minute": 42,
+          "added_minute": 0,
+          "type": "goal"
+        },
+        {
+          "team": "Morocco",
+          "player": "Achraf Dari",
+          "minute": 70,
+          "added_minute": 0,
+          "type": "yellow_card"
+        },
+        {
+          "team": "Morocco",
+          "player": "Walid Cheddira",
+          "minute": 90,
+          "added_minute": 1,
+          "type": "yellow_card"
+        },
+        {
+          "team": "Morocco",
+          "player": "Walid Cheddira",
+          "minute": 90,
+          "added_minute": 3,
+          "type": "red_card"
+        },
+        {
+          "team": "Portugal",
+          "player": "Vitinha",
+          "minute": 87,
+          "added_minute": 0,
+          "type": "yellow_card"
+        }
+      ]
+    },
+    {
+      "stage": "Quarter-finals",
+      "group": null,
+      "date": "2022-12-10",
+      "time": "22:00",
+      "home": "England",
+      "away": "France",
+      "normal_home": 1,
+      "normal_away": 2,
+      "extra_home": null,
+      "extra_away": null,
+      "penalty_home": null,
+      "penalty_away": null,
+      "stadium": "Al Bayt Stadium",
+      "city": "Al Khor",
+      "source_line": "worldcup_2022_finals.txt:48",
+      "events": [
+        {
+          "team": "England",
+          "player": "Harry Kane",
+          "minute": 54,
+          "added_minute": 0,
+          "type": "penalty_goal"
+        },
+        {
+          "team": "England",
+          "player": "Harry Maguire",
+          "minute": 90,
+          "added_minute": 0,
+          "type": "yellow_card"
+        },
+        {
+          "team": "France",
+          "player": "Aurelien Tchouameni",
+          "minute": 17,
+          "added_minute": 0,
+          "type": "goal"
+        },
+        {
+          "team": "France",
+          "player": "Olivier Giroud",
+          "minute": 78,
+          "added_minute": 0,
+          "type": "goal"
+        },
+        {
+          "team": "France",
+          "player": "Antoine Griezmann",
+          "minute": 43,
+          "added_minute": 0,
+          "type": "yellow_card"
+        },
+        {
+          "team": "France",
+          "player": "Ousmane Dembele",
+          "minute": 46,
+          "added_minute": 0,
+          "type": "yellow_card"
+        },
+        {
+          "team": "France",
+          "player": "Theo Hernandez",
+          "minute": 82,
+          "added_minute": 0,
+          "type": "yellow_card"
+        }
+      ]
+    },
+    {
+      "stage": "Semi-finals",
+      "group": null,
+      "date": "2022-12-13",
+      "time": "22:00",
+      "home": "Argentina",
+      "away": "Croatia",
+      "normal_home": 3,
+      "normal_away": 0,
+      "extra_home": null,
+      "extra_away": null,
+      "penalty_home": null,
+      "penalty_away": null,
+      "stadium": "Lusail Iconic Stadium",
+      "city": "Lusail",
+      "source_line": "worldcup_2022_finals.txt:54",
+      "events": [
+        {
+          "team": "Argentina",
+          "player": "Lionel Messi",
+          "minute": 34,
+          "added_minute": 0,
+          "type": "penalty_goal"
+        },
+        {
+          "team": "Argentina",
+          "player": "Julian Alvarez",
+          "minute": 39,
+          "added_minute": 0,
+          "type": "goal"
+        },
+        {
+          "team": "Argentina",
+          "player": "Julian Alvarez",
+          "minute": 69,
+          "added_minute": 0,
+          "type": "goal"
+        },
+        {
+          "team": "Argentina",
+          "player": "Cristian Romero",
+          "minute": 68,
+          "added_minute": 0,
+          "type": "yellow_card"
+        },
+        {
+          "team": "Argentina",
+          "player": "Nicolas Otamendi",
+          "minute": 71,
+          "added_minute": 0,
+          "type": "yellow_card"
+        },
+        {
+          "team": "Croatia",
+          "player": "Mateo Kovacic",
+          "minute": 32,
+          "added_minute": 0,
+          "type": "yellow_card"
+        },
+        {
+          "team": "Croatia",
+          "player": "Dominik Livakovic",
+          "minute": 32,
+          "added_minute": 0,
+          "type": "yellow_card"
+        }
+      ]
+    },
+    {
+      "stage": "Semi-finals",
+      "group": null,
+      "date": "2022-12-14",
+      "time": "22:00",
+      "home": "France",
+      "away": "Morocco",
+      "normal_home": 2,
+      "normal_away": 0,
+      "extra_home": null,
+      "extra_away": null,
+      "penalty_home": null,
+      "penalty_away": null,
+      "stadium": "Al Bayt Stadium",
+      "city": "Al Khor",
+      "source_line": "worldcup_2022_finals.txt:57",
+      "events": [
+        {
+          "team": "France",
+          "player": "Theo Hernandez",
+          "minute": 5,
+          "added_minute": 0,
+          "type": "goal"
+        },
+        {
+          "team": "France",
+          "player": "Randal Kolo Muani",
+          "minute": 79,
+          "added_minute": 0,
+          "type": "goal"
+        },
+        {
+          "team": "Morocco",
+          "player": "Sofiane Boufal",
+          "minute": 27,
+          "added_minute": 0,
+          "type": "yellow_card"
+        }
+      ]
+    },
+    {
+      "stage": "Match for third place",
+      "group": null,
+      "date": "2022-12-17",
+      "time": "18:00",
+      "home": "Croatia",
+      "away": "Morocco",
+      "normal_home": 2,
+      "normal_away": 1,
+      "extra_home": null,
+      "extra_away": null,
+      "penalty_home": null,
+      "penalty_away": null,
+      "stadium": "Khalifa International Stadium",
+      "city": "Al Rayyan",
+      "source_line": "worldcup_2022_finals.txt:63",
+      "events": [
+        {
+          "team": "Croatia",
+          "player": "Josko Gvardiol",
+          "minute": 7,
+          "added_minute": 0,
+          "type": "goal"
+        },
+        {
+          "team": "Croatia",
+          "player": "Mislav Orsic",
+          "minute": 42,
+          "added_minute": 0,
+          "type": "goal"
+        },
+        {
+          "team": "Morocco",
+          "player": "Achraf Dari",
+          "minute": 9,
+          "added_minute": 0,
+          "type": "goal"
+        },
+        {
+          "team": "Morocco",
+          "player": "Azzedine Ounahi",
+          "minute": 69,
+          "added_minute": 0,
+          "type": "yellow_card"
+        },
+        {
+          "team": "Morocco",
+          "player": "Selim Amallah",
+          "minute": 84,
+          "added_minute": 0,
+          "type": "yellow_card"
+        }
+      ]
+    },
+    {
+      "stage": "Final",
+      "group": null,
+      "date": "2022-12-18",
+      "time": "18:00",
+      "home": "Argentina",
+      "away": "France",
+      "normal_home": 2,
+      "normal_away": 2,
+      "extra_home": 1,
+      "extra_away": 1,
+      "penalty_home": 4,
+      "penalty_away": 2,
+      "stadium": "Lusail Iconic Stadium",
+      "city": "Lusail",
+      "source_line": "worldcup_2022_finals.txt:68",
+      "events": [
+        {
+          "team": "Argentina",
+          "player": "Lionel Messi",
+          "minute": 23,
+          "added_minute": 0,
+          "type": "penalty_goal"
+        },
+        {
+          "team": "Argentina",
+          "player": "Angel Di Maria",
+          "minute": 36,
+          "added_minute": 0,
+          "type": "goal"
+        },
+        {
+          "team": "Argentina",
+          "player": "Lionel Messi",
+          "minute": 108,
+          "added_minute": 0,
+          "type": "goal"
+        },
+        {
+          "team": "Argentina",
+          "player": "Enzo Fernandez",
+          "minute": 45,
+          "added_minute": 7,
+          "type": "yellow_card"
+        },
+        {
+          "team": "Argentina",
+          "player": "Marcos Acuna",
+          "minute": 90,
+          "added_minute": 8,
+          "type": "yellow_card"
+        },
+        {
+          "team": "Argentina",
+          "player": "Leandro Paredes",
+          "minute": 114,
+          "added_minute": 0,
+          "type": "yellow_card"
+        },
+        {
+          "team": "Argentina",
+          "player": "Gonzalo Montiel",
+          "minute": 116,
+          "added_minute": 0,
+          "type": "yellow_card"
+        },
+        {
+          "team": "Argentina",
+          "player": "Emiliano Martinez",
+          "minute": 125,
+          "added_minute": 0,
+          "type": "yellow_card"
+        },
+        {
+          "team": "France",
+          "player": "Kylian Mbappe",
+          "minute": 80,
+          "added_minute": 0,
+          "type": "penalty_goal"
+        },
+        {
+          "team": "France",
+          "player": "Kylian Mbappe",
+          "minute": 81,
+          "added_minute": 0,
+          "type": "goal"
+        },
+        {
+          "team": "France",
+          "player": "Kylian Mbappe",
+          "minute": 118,
+          "added_minute": 0,
+          "type": "penalty_goal"
+        },
+        {
+          "team": "France",
+          "player": "Adrien Rabiot",
+          "minute": 55,
+          "added_minute": 0,
+          "type": "yellow_card"
+        },
+        {
+          "team": "France",
+          "player": "Marcus Thuram",
+          "minute": 87,
+          "added_minute": 0,
+          "type": "yellow_card"
+        },
+        {
+          "team": "France",
+          "player": "Olivier Giroud",
+          "minute": 90,
+          "added_minute": 5,
+          "type": "yellow_card"
+        },
+        {
+          "team": "France",
+          "player": "Kylian Mbappe",
+          "minute": 120,
+          "added_minute": 1,
+          "type": "shootout_goal"
+        },
+        {
+          "team": "Argentina",
+          "player": "Lionel Messi",
+          "minute": 120,
+          "added_minute": 2,
+          "type": "shootout_goal"
+        },
+        {
+          "team": "France",
+          "player": "Kingsley Coman",
+          "minute": 120,
+          "added_minute": 3,
+          "type": "shootout_miss"
+        },
+        {
+          "team": "Argentina",
+          "player": "Paulo Dybala",
+          "minute": 120,
+          "added_minute": 4,
+          "type": "shootout_goal"
+        },
+        {
+          "team": "France",
+          "player": "Aurelien Tchouameni",
+          "minute": 120,
+          "added_minute": 5,
+          "type": "shootout_miss"
+        },
+        {
+          "team": "Argentina",
+          "player": "Leandro Paredes",
+          "minute": 120,
+          "added_minute": 6,
+          "type": "shootout_goal"
+        },
+        {
+          "team": "France",
+          "player": "Randal Kolo Muani",
+          "minute": 120,
+          "added_minute": 7,
+          "type": "shootout_goal"
+        },
+        {
+          "team": "Argentina",
+          "player": "Gonzalo Montiel",
+          "minute": 120,
+          "added_minute": 8,
+          "type": "shootout_goal"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    "worldcup_2022.txt:48 缺少开球时间，沿用同日上一场时间 18:00",
+    "worldcup_2022.txt:102 缺少开球时间，沿用同日上一场时间 18:00",
+    "worldcup_2022.txt:121 缺少开球时间，沿用同日上一场时间 22:00",
+    "worldcup_2022.txt:182 缺少开球时间，沿用同日上一场时间 18:00"
+  ]
+}

@@ -1,0 +1,232 @@
+erDiagram
+    wc_sys_user {
+        bigint id PK
+        varchar username
+        varchar email
+        varchar auth_key
+        varchar password_hash
+        varchar password_reset_token
+        varchar verification_token
+        varchar role
+        smallint status
+        int created_at
+        int updated_at
+    }
+    wc_sys_team {
+        bigint id PK
+        varchar name
+        text description
+        datetime created_at
+        datetime updated_at
+    }
+    wc_sys_member {
+        bigint id PK
+        bigint user_id
+        bigint team_id
+        varchar display_name
+        varchar student_number
+        text bio
+        datetime created_at
+        datetime updated_at
+    }
+    wc_sys_user ||--o{ wc_sys_member : "user_id"
+    wc_sys_team ||--o{ wc_sys_member : "team_id"
+    wc_content_announcement {
+        bigint id PK
+        bigint author_id
+        varchar title
+        text content
+        varchar status
+        datetime published_at
+        datetime created_at
+        datetime updated_at
+    }
+    wc_sys_user ||--o{ wc_content_announcement : "author_id"
+    wc_sys_assignment {
+        bigint id PK
+        bigint owner_id
+        varchar scope
+        varchar title
+        varchar relative_path
+        char sha256
+        datetime created_at
+        datetime updated_at
+    }
+    wc_sys_user ||--o{ wc_sys_assignment : "owner_id"
+    wc_sys_audit {
+        bigint id PK
+        bigint actor_id
+        varchar action
+        varchar object_type
+        bigint object_id
+        text details
+        datetime created_at
+        datetime updated_at
+    }
+    wc_sys_user ||--o{ wc_sys_audit : "actor_id"
+    wc_sys_notification {
+        bigint id PK
+        bigint user_id
+        varchar subject
+        text content
+        varchar channel
+        varchar status
+        datetime created_at
+        datetime updated_at
+    }
+    wc_sys_user ||--o{ wc_sys_notification : "user_id"
+    wc_data_tournament {
+        bigint id PK
+        smallint year
+        varchar name
+        date starts_at
+        date ends_at
+        varchar source_url
+        datetime created_at
+        datetime updated_at
+    }
+    wc_data_stage {
+        bigint id PK
+        bigint tournament_id
+        varchar name
+        int sort_order
+        datetime created_at
+        datetime updated_at
+    }
+    wc_data_tournament ||--o{ wc_data_stage : "tournament_id"
+    wc_data_group {
+        bigint id PK
+        bigint tournament_id
+        varchar name
+        datetime created_at
+        datetime updated_at
+    }
+    wc_data_tournament ||--o{ wc_data_group : "tournament_id"
+    wc_data_stadium {
+        bigint id PK
+        varchar name
+        varchar city
+        int capacity
+        varchar source_url
+        datetime created_at
+        datetime updated_at
+    }
+    wc_data_team {
+        bigint id PK
+        varchar name
+        char fifa_code
+        varchar confederation
+        text description
+        datetime created_at
+        datetime updated_at
+    }
+    wc_data_player {
+        bigint id PK
+        varchar name
+        bigint nationality_team_id
+        date birth_date
+        varchar position
+        varchar source_url
+        datetime created_at
+        datetime updated_at
+    }
+    wc_data_team ||--o{ wc_data_player : "nationality_team_id"
+    wc_data_squad {
+        bigint id PK
+        bigint tournament_id
+        bigint team_id
+        bigint player_id
+        bigint group_id
+        smallint shirt_number
+        datetime created_at
+        datetime updated_at
+    }
+    wc_data_tournament ||--o{ wc_data_squad : "tournament_id"
+    wc_data_team ||--o{ wc_data_squad : "team_id"
+    wc_data_player ||--o{ wc_data_squad : "player_id"
+    wc_data_group ||--o{ wc_data_squad : "group_id"
+    wc_data_match {
+        bigint id PK
+        bigint tournament_id
+        bigint stage_id
+        bigint group_id
+        bigint stadium_id
+        int match_number
+        bigint home_team_id
+        bigint away_team_id
+        datetime kicks_off_at
+        smallint normal_home
+        smallint normal_away
+        smallint extra_home
+        smallint extra_away
+        smallint penalty_home
+        smallint penalty_away
+        varchar status
+        varchar source_key
+        datetime created_at
+        datetime updated_at
+    }
+    wc_data_tournament ||--o{ wc_data_match : "tournament_id"
+    wc_data_stage ||--o{ wc_data_match : "stage_id"
+    wc_data_group ||--o{ wc_data_match : "group_id"
+    wc_data_stadium ||--o{ wc_data_match : "stadium_id"
+    wc_data_team ||--o{ wc_data_match : "home_team_id"
+    wc_data_team ||--o{ wc_data_match : "away_team_id"
+    wc_data_event {
+        bigint id PK
+        bigint match_id
+        bigint player_id
+        bigint team_id
+        smallint minute
+        smallint added_minute
+        varchar type
+        varchar source_key
+        datetime created_at
+        datetime updated_at
+    }
+    wc_data_match ||--o{ wc_data_event : "match_id"
+    wc_data_player ||--o{ wc_data_event : "player_id"
+    wc_data_team ||--o{ wc_data_event : "team_id"
+    wc_fan_post {
+        bigint id PK
+        bigint user_id
+        bigint match_id
+        varchar title
+        text content
+        varchar status
+        datetime created_at
+        datetime updated_at
+    }
+    wc_sys_user ||--o{ wc_fan_post : "user_id"
+    wc_data_match ||--o{ wc_fan_post : "match_id"
+    wc_fan_comment {
+        bigint id PK
+        bigint post_id
+        bigint user_id
+        bigint parent_id
+        text content
+        varchar status
+        datetime created_at
+        datetime updated_at
+    }
+    wc_fan_post ||--o{ wc_fan_comment : "post_id"
+    wc_sys_user ||--o{ wc_fan_comment : "user_id"
+    wc_fan_comment ||--o{ wc_fan_comment : "parent_id"
+    wc_fan_team_favorite {
+        bigint id PK
+        bigint user_id
+        bigint team_id
+        datetime created_at
+        datetime updated_at
+    }
+    wc_sys_user ||--o{ wc_fan_team_favorite : "user_id"
+    wc_data_team ||--o{ wc_fan_team_favorite : "team_id"
+    wc_fan_match_favorite {
+        bigint id PK
+        bigint user_id
+        bigint match_id
+        datetime created_at
+        datetime updated_at
+    }
+    wc_sys_user ||--o{ wc_fan_match_favorite : "user_id"
+    wc_data_match ||--o{ wc_fan_match_favorite : "match_id"
