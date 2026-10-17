@@ -1,32 +1,5 @@
 <?php
-
-declare(strict_types=1);
-
-/** @var yii\web\View $this */
-
-use yii\helpers\Html;
-
-$this->title = 'Dashboard';
-$username = Yii::$app->user->identity?->username;
-?>
-<div class="site-index">
-    <!-- Welcome banner -->
-    <div class="dashboard-banner text-white rounded-4 p-4 p-lg-5 mb-4">
-        <div class="row align-items-center">
-            <div class="col-lg-8">
-                <h1 class="fw-bold mb-2">Welcome back, <?= Html::encode($username) ?></h1>
-                <p class="opacity-75 mb-0">
-                    This is your administration panel. Manage your application from here.
-                </p>
-            </div>
-            <div class="col-lg-4 text-lg-end mt-3 mt-lg-0">
-                <?= Html::img(
-                    Yii::getAlias('@web/images/yii3_full_white_for_dark.svg'),
-                    [
-                        'alt' => 'Yii Framework', 'height' => 48,
-                    ],
-                ) ?>
-            </div>
-        </div>
-    </div>
-</div>
+/**
+ * 知行学习团队：backend/views/site/index.php
+ * 负责人：黄奕浩 2413581；由AI辅助编写，保留原Yii框架署名。
+ */ use yii\helpers\Html;$this->title='内容管理 · 知行'; ?><div class="eyebrow">CONTENT WORKSPACE</div><h1>团队内容管理</h1><div class="grid"><?php foreach($counts as $label=>$count): ?><div class="card"><span class="muted"><?= Html::encode($label) ?></span><h1><?= (int)$count ?></h1></div><?php endforeach ?></div><h2>开始维护</h2><div class="actions"><?= Html::a('编辑团队介绍',['team/update'],['class'=>'button']) ?><?= Html::a('管理成员',['member/index'],['class'=>'button']) ?><?= Html::a('发布公告',['announcement/create'],['class'=>'button']) ?></div>

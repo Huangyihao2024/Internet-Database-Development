@@ -7,7 +7,7 @@ namespace frontend\controllers;
 use Yii;
 use common\models\{Team,MemberProfile,Announcement,RegistrationForm};
 class SiteController extends \common\controllers\AuthController {
- public function actionIndex() { return $this->render('index'); }
+ public function actionIndex() { return $this->render('index',['team'=>Team::find()->one(),'members'=>MemberProfile::find()->orderBy('id')->all(),'announcements'=>Announcement::published()->orderBy(['published_at'=>SORT_DESC,'id'=>SORT_DESC])->limit(5)->all()]); }
  public function actionSignup() {
   if (!Yii::$app->user->isGuest) return $this->goHome();
   $model=new RegistrationForm();
