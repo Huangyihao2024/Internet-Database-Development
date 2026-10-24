@@ -6,5 +6,5 @@
 namespace backend\controllers;
 use common\models\{MemberProfile,Announcement,AssignmentFile};
 class SiteController extends \common\controllers\AuthController {
- public function actionIndex() { return $this->render('index',['counts'=>['成员资料'=>MemberProfile::find()->count(),'公告'=>Announcement::find()->count(),'作业文件'=>0]]); }
+ public function actionIndex() { return $this->render('index',['counts'=>['成员资料'=>MemberProfile::find()->count(),'公告'=>Announcement::find()->count(),'作业文件'=>AssignmentFile::find()->count()]]); }
 }
