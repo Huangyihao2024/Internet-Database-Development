@@ -1,0 +1,2 @@
+<?php
+/** 绿茵视界公共及社区模块；本人负责，AI辅助编写。 */ use yii\helpers\Html;$this->title='审核社区内容'; ?><h1>审核<?= $kind==='post'?'话题':'评论' ?></h1><?php if($kind==='post'): ?><h2><?= Html::encode($model->title) ?></h2><?php endif ?><article class="card prose"><?= Html::encode($model->content) ?></article><?= Html::beginForm() ?><label for="status">处理状态</label><?= Html::dropDownList('status',$model->status,['pending'=>'待审核','published'=>'通过公开','rejected'=>'驳回','archived'=>'撤下'],['id'=>'status']) ?><p class="muted">保存后生成审核通知。</p><button>保存审核</button><?= Html::endForm() ?>
