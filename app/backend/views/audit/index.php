@@ -1,0 +1,2 @@
+<?php
+/** 团队留言、审核与公共服务；本人负责，AI辅助实现。 */ use yii\helpers\Html;$this->title='操作日志'; ?><h1>操作日志</h1><table><tr><th>操作人编号</th><th>动作</th><th>对象</th><th>对象编号</th><th>时间</th></tr><?php foreach($provider->models as $m): ?><tr><?php foreach(['actor_id','action','object_type','object_id','created_at'] as $f): ?><td><?= Html::encode($m->$f) ?></td><?php endforeach ?></tr><?php endforeach ?></table><?= \yii\widgets\LinkPager::widget(['pagination'=>$provider->pagination]) ?>
