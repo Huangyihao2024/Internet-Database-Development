@@ -6,14 +6,14 @@
 namespace common\models;
 use Yii;
 class RegistrationForm extends \yii\base\Model {
- public $username; public $email; public $password;
+ public $verifyCode; public $username; public $email; public $password;
  public function rules() { return [
-  [['username','email','password'],'required'], [['username','email'],'trim'],
+  [['username','email','password','verifyCode'],'required'], ['verifyCode','captcha','captchaAction'=>'site/captcha'], [['username','email'],'trim'],
   ['username','match','pattern'=>'/^[a-zA-Z0-9_]{3,32}$/','message'=>'用户名为3—32位字母、数字或下划线。'],
   ['email','email'],['email','string','max'=>255],['password','string','min'=>10,'max'=>128],
   [['username','email'],'unique','targetClass'=>User::class],
  ]; }
- public function attributeLabels() { return ['username'=>'用户名','email'=>'邮箱','password'=>'密码（至少10位）']; }
+ public function attributeLabels() { return ['verifyCode'=>'验证码','username'=>'用户名','email'=>'邮箱','password'=>'密码（至少10位）']; }
  public function register() {
   if (!$this->validate()) return false;
   return Yii::$app->db->transaction(function(){

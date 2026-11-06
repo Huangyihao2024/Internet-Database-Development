@@ -20,7 +20,7 @@ class AuthController extends \yii\web\Controller {
     if (Yii::$app->id==='app-backend' && !$u->isAdmin) {
      Yii::$app->cache->set($key,$attempts+1,60);throw new \yii\web\ForbiddenHttpException('仅管理员可登录后台；普通成员请从前台登录。');
     }
-    Yii::$app->user->login($u,0);Yii::$app->cache->delete($key);return $this->goHome();
+    Yii::$app->user->login($u,0);Yii::info(['event'=>'login','user_id'=>$u->id],'team.auth');Yii::$app->cache->delete($key);return $this->goHome();
    }
    Yii::$app->cache->set($key,$attempts+1,60);
   }
