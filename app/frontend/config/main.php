@@ -1,5 +1,5 @@
 <?php
-/** Yii2框架文件；世界杯项目集成维护。原作者许可见LICENSE.md。 */
+/** Yii2原始框架文件；绿茵数据团队集成维护：黄奕浩 2413581（AI辅助）。 */
 
 declare(strict_types=1);
 
@@ -22,15 +22,16 @@ return [
         'user' => [
             'identityClass' => \common\models\User::class,
             'enableAutoLogin' => true,
-            'identityCookie' => ['name' => '_identity-frontend', 'httpOnly' => true],
+            'identityCookie' => ['name' => '_identity-worldcup-frontend', 'httpOnly' => true],
         ],
         'session' => [
             // this is the name of the session cookie used for login on the frontend
-            'name' => 'advanced-frontend',
+            'name' => 'worldcup-frontend',
         ],
         'log' => [
             'traceLevel' => YII_DEBUG ? 3 : 0,
             'targets' => [
+                ['class'=>\yii\log\FileTarget::class,'levels'=>['info','profile'],'categories'=>['team.*'],'logVars'=>[],'logFile'=>'@runtime/logs/team.log'],
                 [
                     'class' => \yii\log\FileTarget::class,
                     'levels' => ['error', 'warning'],
