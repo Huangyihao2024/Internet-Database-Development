@@ -1,34 +1,5 @@
 <?php
-/** Yii2框架文件；世界杯项目集成维护。原作者许可见LICENSE.md。 */
-
-declare(strict_types=1);
-
-/** @var yii\web\View $this */
-/** @var string $name */
-/** @var string $message */
-/** @var Exception $exception */
-
-use yii\helpers\Html;
-use yii\web\HttpException;
-
-$this->title = $name;
-$statusCode = $exception instanceof HttpException ? $exception->statusCode : 500;
-?>
-<div class="site-error d-flex align-items-center justify-content-center text-center">
-    <div class="site-error-content mx-auto">
-        <h1 class="display-1 fw-bold text-body-secondary mb-0"><?= Html::encode((string) $statusCode) ?></h1>
-
-        <h2 class="display-6 fw-semibold mb-3"><?= Html::encode($message) ?></h2>
-
-        <p class="text-body-secondary mb-4">
-            The above error occurred while the Web server was processing your request.
-            Please contact us if you think this is a server error. Thank you.
-        </p>
-
-        <?= Html::a(
-            'Go to Homepage',
-            Yii::$app->homeUrl,
-            ['class' => 'btn btn-outline-primary btn-lg'],
-        ) ?>
-    </div>
-</div>
+/**
+ * 绿茵数据团队：frontend/views/site/error.php
+ * 负责人：黄奕浩 2413581；由AI辅助编写，保留原Yii框架署名。
+ */ use yii\helpers\Html;$this->title='请求未完成'; ?><h1><?= Html::encode($name) ?></h1><p><?= Html::encode($message) ?></p><p><?= Html::a('返回首页',['site/index']) ?></p>
