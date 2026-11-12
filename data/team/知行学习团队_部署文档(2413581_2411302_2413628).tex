@@ -1,0 +1,58 @@
+\documentclass[UTF8,a4paper,11pt,fontset=windows]{ctexart}
+\usepackage[margin=2.1cm]{geometry}
+\usepackage{graphicx,float,booktabs,tabularx,fancyhdr,xurl,fvextra}
+\usepackage[hidelinks]{hyperref}
+\setlength{\parskip}{.25em}
+\setlength{\emergencystretch}{2em}
+\renewcommand{\arraystretch}{1.2}
+\pagestyle{fancy}\fancyhf{}
+\fancyhead[L]{互联网数据库开发 · 知行学习团队}
+\fancyhead[R]{2413581 黄奕浩}\fancyfoot[C]{\thepage}
+\setlength{\headheight}{14pt}\raggedbottom
+\begin{document}
+\begin{titlepage}\thispagestyle{empty}\centering
+\vspace*{.6cm}\includegraphics[width=.43\textwidth]{../../figures/nankai_logo_color.png}
+\vspace{.9cm}\rule{.88\textwidth}{.8pt}\par\vspace{.55cm}
+{\fontsize{27pt}{35pt}\selectfont\bfseries 互联网数据库开发课程设计\par}
+\vspace{.65cm}{\fontsize{21pt}{29pt}\selectfont\bfseries 部署文档\par}
+\vspace{.55cm}\rule{.88\textwidth}{.8pt}\par
+\vspace{1.3cm}{\Large 知行学习团队\par}
+\vspace{.6cm}{\large 黄奕浩\quad 2413581\quad 组长\par
+王乐之\quad 2411302\par 黄乐仁\quad 2413628\par}
+\end{titlepage}
+\section{运行组成}
+本机开发使用PHP 8.3.36、Yii2 2.0.55和MySQL 8.0.44。前台监听127.0.0.1:8771，后台监听127.0.0.1:8772，独立数据库实例监听127.0.0.1:13316。数据库名为zhixing\_team，包含15张业务表。原MySQL80服务及其数据不参与本项目开发实例。
+
+\section{一键部署}
+在仓库根目录双击“一键部署.cmd”，脚本自动创建独立MySQL实例、数据库和专用用户，生成随机口令，安装锁定依赖、生成配置、导入结构及样例账号，最后启动前台8775与后台8776并检查页面。数据库端口为13318，不改动原开发实例。再次运行复用已有部署，不覆盖已有数据。首次需要网络及已安装的PHP 8.3、MySQL 8、Python；环境路径可通过ZHIXING\_PHP\_ROOT和ZHIXING\_MYSQL\_ROOT指定。账号和日志保存在被Git忽略的.local/oneclick，不进入公开仓库。
+\section{现有目录启动}
+在团队实验文件夹双击“启动开发环境.cmd”，脚本启动独立MySQL与两个PHP开发进程。访问前台与后台地址即可使用。登录信息保存在运行环境中的本机登录信息文件，不纳入公开仓库。停止时使用“停止开发环境.cmd”，脚本识别本项目进程后关闭PHP服务，并正常关闭独立MySQL。
+
+PHP使用独立php-team.ini，启用pdo\_mysql、mbstring、curl和openssl。为适应MySQL对中文路径的处理，开发机使用D盘目录联接指向团队运行环境；实际数据仍保存在团队目录。该联接和开发机绝对路径不作为其他电脑的部署前提。
+
+\section{从公开仓库还原}
+克隆仓库后准备PHP 8.3及以上、Python、Git和MySQL 8，创建一个专用的空数据库并授予专用账户该库权限。不要选用已有其他业务的数据库。项目scripts/setup.py接收PHP目录、MySQL DSN和数据库用户名，密码通过交互输入，不放入命令行或Git。
+
+\begin{quote}\ttfamily\small
+python scripts/setup.py\\
+--php-root "PHP目录"\\
+--dsn "mysql:host=127.0.0.1;port=3306;dbname=zhixing\_team"\\
+--db-user zhixing\_app
+\end{quote}
+
+脚本把Composer及缓存放入项目.local目录，核对Composer官方SHA256，按composer.lock安装依赖，执行Development初始化，导入空库结构并生成本机数据库配置。随后创建随机密码的三位成员开发账号、三条成员资料、五条演示公告并登记实际下载文件。已有本机配置时脚本停止，不覆盖现有连接信息。
+
+在PHP目录分别执行PHP内置服务命令，带上项目.local/php.ini配置，文档根目录分别指向app/frontend/web与app/backend/web；端口采用8771和8772。该方式用于本机开发，不作为公网生产服务器。正式公网部署还需Web服务器、HTTPS以及Production环境配置。
+
+\section{数据恢复与成果文件}
+data/install.sql保存实际数据库结构的导出，不包含本机密码。该脚本直接创建15张业务表，不能与Yii默认user建表迁移重复执行。示例数据由team-setup/seed初始化，重复执行不会覆盖已经编辑的团队介绍、成员资料或公告。
+
+团队文档放入data/team，个人报告和提交文件放入data/personal，随后执行yii team-setup/sync-downloads。页面只对存在且摘要正确的文件提供下载。公开仓库保留报告PDF与源码；原始完整个人提交ZIP保留在本机，避免把PHP运行时和模板依赖一并塞入Git历史。
+
+\section{本机还原结果}
+在独立新建数据库导入install.sql后，实际得到15张表；示例初始化完成。随后用该数据库分别启动临时前后台，前台正常展示团队内容，后台进入登录页面。验证后停止这两个临时服务，原开发数据库与8771、8772服务继续使用。
+
+\section{常见处理}
+数据库连接失败时先检查实例端口、数据库名和账户权限；不要删除原有数据库重新尝试。PHP缺少驱动时检查使用的php.ini和extension\_dir。Composer网络等待时采用本机实际代理配置，不关闭TLS校验或跳过平台依赖。修改下载文件后需同步摘要；否则页面会将文件视为不可用。
+
+\end{document}

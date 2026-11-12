@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "知行学习专注助手",
+  "version": "1.0.0",
+  "description": "阅读模式、专注计时与本地学习笔记。",
+  "permissions": [
+    "storage",
+    "activeTab",
+    "scripting",
+    "alarms"
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "host_permissions": [
+    "http://127.0.0.1/*"
+  ]
+}

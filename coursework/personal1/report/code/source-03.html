@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+ <meta charset="utf-8"/>
+ <title>
+  知行学习专注助手
+ </title>
+ <link href="popup.css" rel="stylesheet"/>
+ <body>
+  <h1>
+   知行学习专注助手
+  </h1>
+  <p>
+   2413581 黄奕浩
+  </p>
+  <button id="reading">
+   切换阅读模式
+  </button>
+  <h2>
+   专注计时
+  </h2>
+  <label>
+   时长
+   <input id="minutes" max="120" min="1" type="number" value="25"/>
+   分钟
+  </label>
+  <p id="timer">
+   尚未开始
+  </p>
+  <button id="start">
+   开始专注
+  </button>
+  <button id="stop">
+   结束专注
+  </button>
+  <h2>
+   学习笔记
+  </h2>
+  <textarea id="note" maxlength="2000" placeholder="记录当前页面的学习收获"></textarea>
+  <button id="save">
+   保存笔记
+  </button>
+  <button id="export">
+   导出笔记
+  </button>
+  <p id="status" role="status">
+  </p>
+  <p>
+   笔记仅保存在本机浏览器，不上传服务器。
+  </p>
+  <script src="popup.js">
+  </script>
+ </body>
+</html>

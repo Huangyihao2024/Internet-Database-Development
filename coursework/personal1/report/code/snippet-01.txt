@@ -1,0 +1,14 @@
+# 实际请求记录 2026-11-06T00:25:08.117604
+GET /api/resources?category=%E6%95%B0%E6%8D%AE%E5%BA%93 HTTP/1.1
+Host: 127.0.0.1:8761
+Connection: close
+
+
+
+HTTP/1.0 200 OK
+Server: SimpleHTTP/0.6 Python/3.13.0
+Date: Thu, 05 Nov 2026 16:25:08 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 284
+
+{"items": [{"id": 1, "title": "数据库 SQL 入门", "category": "数据库", "description": "理解查询、连接与聚合，完成课程练习。"}, {"id": 4, "title": "数据库索引笔记", "category": "数据库", "description": "通过执行计划认识索引的作用。"}]}

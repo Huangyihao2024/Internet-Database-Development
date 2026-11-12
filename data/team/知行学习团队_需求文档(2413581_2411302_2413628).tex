@@ -1,0 +1,57 @@
+\documentclass[UTF8,a4paper,11pt,fontset=windows]{ctexart}
+\usepackage[margin=2.1cm]{geometry}
+\usepackage{graphicx,float,booktabs,tabularx,fancyhdr,xurl,fvextra}
+\usepackage[hidelinks]{hyperref}
+\setlength{\parskip}{.25em}
+\setlength{\emergencystretch}{2em}
+\renewcommand{\arraystretch}{1.2}
+\pagestyle{fancy}\fancyhf{}
+\fancyhead[L]{互联网数据库开发 · 知行学习团队}
+\fancyhead[R]{2413581 黄奕浩}\fancyfoot[C]{\thepage}
+\setlength{\headheight}{14pt}\raggedbottom
+\begin{document}
+\begin{titlepage}\thispagestyle{empty}\centering
+\vspace*{.6cm}\includegraphics[width=.43\textwidth]{../../figures/nankai_logo_color.png}
+\vspace{.9cm}\rule{.88\textwidth}{.8pt}\par\vspace{.55cm}
+{\fontsize{27pt}{35pt}\selectfont\bfseries 互联网数据库开发课程设计\par}
+\vspace{.65cm}{\fontsize{21pt}{29pt}\selectfont\bfseries 需求文档\par}
+\vspace{.55cm}\rule{.88\textwidth}{.8pt}\par
+\vspace{1.3cm}{\Large 知行学习团队\par}
+\vspace{.6cm}{\large 黄奕浩\quad 2413581\quad 组长\par
+王乐之\quad 2411302\par 黄乐仁\quad 2413628\par}
+\end{titlepage}
+\section{项目目标与用户}
+知行学习团队门户与资源协作平台用于介绍团队和成员、分享学习内容、组织活动并汇集课程成果。访客可以认识团队、浏览已发布内容和下载作业；登录成员可以维护自己的资料，并使用资源收藏、评论和活动报名；管理员负责内容发布、资料维护和审核。
+
+系统以前台内容展示与后台管理组成。团队及个人介绍、留言交流、信息编辑与信息发布是课程设计的核心内容。数据库设计为15张业务表，采用Yii2 Advanced组织MVC代码，MySQL保存数据。团队按模块分工，每人负责至少一个Model、Controller和View。
+
+\section{功能需求}
+\subsection{公共账户与团队展示}
+注册使用用户名、邮箱和密码，用户名不可重复。普通注册账户固定为member角色，不接受客户端指定管理员身份。登录后可查看当前身份并退出；后台单独校验管理员权限。密码保存为哈希，页面不展示密码和验证密钥。
+
+首页展示团队介绍、成员卡片与最新公告。成员列表提供姓名、学号和个人介绍，详情页展示完整内容。资料编辑使用会话中的用户ID，普通成员只修改自己的记录；管理员可以在后台维护所有成员以及团队介绍。无效成员编号返回404。
+
+\subsection{公告发布与作业下载}
+管理员可以新增、编辑、发布、撤下和删除公告。公告分为草稿、已发布和已撤下状态，只有已发布且发布时间不晚于当前时间的公告可被访客读取。删除操作使用POST并校验CSRF令牌；用户输入经转义后显示。
+
+下载中心按团队材料与个人作业分类。记录保存相对于data目录的文件路径和SHA256摘要，下载前验证路径范围、文件是否存在及摘要是否一致。不可用文件不显示有效下载按钮。团队材料位于data/team，个人材料位于data/personal，SQL位于data/install.sql。
+
+\subsection{资源、活动与交流}
+资源模块由王乐之负责，包含分类、标题搜索、标签、分页、收藏和统计图表。活动与交流模块由黄乐仁负责，包含活动发布、报名容量控制、取消报名、留言及评论审核和操作日志。两类模块属于团队需求，当前公共模块交付不代表这两类功能已经实现。
+
+\section{数据需求与接口}
+公共模块涉及user、team、member\_profile、announcement、assignment\_file。资源模块涉及resource\_category、resource、tag、resource\_tag、resource\_favorite。活动交流涉及activity、activity\_registration、guestbook\_message、resource\_comment、audit\_log。
+
+公共身份接口site/me只返回登录状态、用户ID、用户名与角色，不返回密码哈希、邮箱或auth\_key。资源发布者、评论作者和报名用户均使用会话身份，不能相信表单提交的用户编号。成员与账户一对一，资源标签和收藏用唯一约束去重，活动报名用活动与用户组合唯一键去重。
+
+\section{页面与操作约束}
+前台导航包含团队首页、成员、公告和作业下载。后台围绕团队介绍、成员维护和公告管理提供操作入口。表单显示字段标签、校验错误和保存反馈；移动端在窄屏下按单列排列成员卡片。
+
+所有写请求执行CSRF校验，后台动作在服务器端检查管理员身份。查询通过ActiveRecord或绑定参数执行，正文使用文本转义。注册使用的邮箱只作为账号信息，本项目不依赖外部邮件服务，当前注册流程不发送邮件。
+
+\section{分工与交付}
+黄奕浩负责公共账户、成员展示、公告和下载中心、公共配置与集成部署，占计划工作量34\%；王乐之负责资源模块与数据图表、设计文档，占33\%；黄乐仁负责活动交流与审核、实现文档和手册统稿，占33\%。工作量最终以实际代码、任务记录与联调结果调整。
+
+团队最终提交需求、设计、实现、用户手册、部署、项目展示和5至15分钟录屏。Git用于版本控制，Tower用于任务管理。每个PHP文件写明用途与责任归属，文件命名统一，演示公告明确标注为自拟内容。各人保留本模块代码、必要截图及真实提交记录。
+
+\end{document}

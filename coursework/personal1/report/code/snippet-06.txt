@@ -1,0 +1,1 @@
+$('#details').stop(true,true).slideToggle(180);

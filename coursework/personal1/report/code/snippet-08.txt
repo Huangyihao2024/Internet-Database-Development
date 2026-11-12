@@ -1,0 +1,4 @@
+$('#messageForm').on('submit', function(event) {
+  event.preventDefault();
+  // 使用 $.ajax 发起 POST，完整代码见附录
+});
