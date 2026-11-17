@@ -7,7 +7,7 @@ php=Path(args.php_root).resolve();exe=php/'php.exe' if os.name=='nt' else php/'p
 if (R/'app/common/config/main-local.php').exists():raise SystemExit('已有本机数据库配置，停止以免覆盖。请在全新克隆目录部署。')
 pw=sys.stdin.readline().rstrip('\r\n') if args.password_stdin else getpass.getpass('MySQL database password: ')
 if not pw:raise SystemExit('Database password must not be empty')
-ini=local/'php.ini';ini.write_text('extension_dir="ext"\nextension=mbstring\nextension=curl\nextension=openssl\nextension=fileinfo\nextension=gd\nextension=pdo_mysql\n',encoding='utf-8')
+ini=local/'php.ini';ini.write_text('extension_dir="ext"\nextension=mbstring\nextension=curl\nextension=openssl\nextension=fileinfo\nextension=gd\nextension=pdo_mysql\nextension=zip\n',encoding='utf-8')
 composer=local/'composer.phar'
 if not composer.exists():
  data=urllib.request.urlopen('https://getcomposer.org/composer-stable.phar',timeout=45).read()

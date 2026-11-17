@@ -1,0 +1,62 @@
+\documentclass[UTF8,a4paper,11pt,fontset=windows]{ctexart}
+\usepackage[margin=2.1cm]{geometry}
+\usepackage{graphicx,float,booktabs,tabularx,fancyhdr,xurl,fvextra}
+\usepackage[hidelinks]{hyperref}
+\setlength{\parskip}{.25em}\setlength{\emergencystretch}{2em}
+\renewcommand{\arraystretch}{1.2}\raggedbottom
+\ctexset{section={format={\large\bfseries\raggedright},beforeskip=1.2ex,afterskip=.6ex}}
+\linespread{1.12}
+\pagestyle{fancy}\fancyhf{}\fancyhead[L]{互联网数据库开发 · 绿茵数据团队}
+\fancyhead[R]{绿茵视界}\fancyfoot[C]{\thepage}\setlength{\headheight}{14pt}
+\begin{document}
+\begin{titlepage}\thispagestyle{empty}\centering
+\vspace*{.6cm}\includegraphics[width=.43\textwidth]{../../figures/nankai_logo_color.png}
+\vspace{.9cm}\rule{.88\textwidth}{.8pt}\par\vspace{.55cm}
+{\fontsize{27pt}{35pt}\selectfont\bfseries 互联网数据库开发课程设计\par}
+\vspace{.65cm}{\fontsize{21pt}{29pt}\selectfont\bfseries 用户手册\par}
+\vspace{.55cm}\rule{.88\textwidth}{.8pt}\par\vspace{1.1cm}
+{\Large 绿茵视界\par 世界杯赛事数据与球迷互动平台\par}
+\vspace{.65cm}{\large 绿茵数据团队\par 黄奕浩\quad 2413581\quad 组长\par 王乐之\quad 2411302\par}
+\end{titlepage}
+\section{进入绿茵视界}
+打开前台\url{http://127.0.0.1:8781/}，浏览世界杯球迷话题、公告、开发团队和课程作业。首页“进入球迷社区”进入话题列表，可通过关键词搜索并分页。点击标题阅读话题与公开评论。
+
+\section{注册、登录与资料}
+点击注册，填写用户名、邮箱、至少10位密码和图形验证码。验证码看不清时点击图片刷新。重复用户名、错误验证码或缺少字段会在表单提示。登录后点击“我的资料”，编辑个人介绍并保存；退出通过导航按钮完成。
+
+开发团队页展示两名开发者，普通球迷个人资料与开发团队分别管理。后台只允许管理员账号，登录信息保存在本机accounts.json。不要将本机口令放入截图或上传仓库。
+
+\section{发布讨论与回复}
+登录后点击“发起讨论”，填写标题、正文，可选关联已录入的比赛。提交后进入“我的话题”，显示待审核；审核通过后进入公开列表。编辑会重新待审，撤下后不再公开。只能编辑与撤下自己的话题。
+
+在话题详情中输入评论并提交，等待审核。点击某条评论下的“回复”后再填写内容，系统关联该评论。访客需先登录。回复对象不可用时会提示错误；话题撤下后详情不再公开。
+
+\section{后台内容维护}
+管理员访问\url{http://127.0.0.1:8782/}。团队介绍、成员管理可修改开发团队信息；公告管理可新建、发布、编辑、撤下和删除公告。社区审核中选择话题或评论，打开“审核”，选择状态并保存。通知页可查看投递状态与内容预览，操作日志页按时间查看管理动作。
+
+\section{下载与启动}
+在作业下载页按团队材料、个人作业选择文件；文件暂不可用时联系管理员检查并同步登记。双击“一键部署.cmd”启动独立环境，双击“停止运行.cmd”停止服务并保留数据；详细参数见部署文档。
+
+组长按录屏脚本完成部署、各网页和PPT讲解，最终视频时长5至15分钟。
+\section{比赛、球队与球员}
+进入“比赛”，按届次、日期、阶段或球队筛选，点击比赛查看比分、球场、比赛事件和点球大战。日期按北京时间展示。进入球队页查看球队与阵容，点击球员查看所属球队和个人资料。
+
+\begin{figure}[H]\centering
+\includegraphics[width=\linewidth,height=.34\textheight,keepaspectratio]{../../figures/20_match_detail.png}
+\caption{比赛详情与事件}
+\end{figure}
+\section{积分、射手、收藏与图表}
+积分页面按小组展示积分、净胜球和进球数，并展示射手榜。登录后在球队或比赛详情中点击收藏按钮，再到“我的收藏”统一查看；再次操作可取消收藏。
+
+统计页提供球队进球、比赛进球趋势、阶段分布与球员进球四类图表。切换届次、阶段或球队后刷新图表，空结果显示提示；缩小窗口可检查手机布局。图表标签随容器重绘并保持14像素字号，球队和球员列表可滚动查看全部。连续切换筛选以最后选择为准；请求失败时点击刷新重试。
+
+\begin{figure}[H]\centering
+\includegraphics[width=\linewidth,height=.27\textheight,keepaspectratio]{../../figures/27_charts.png}
+\caption{统计筛选与四类图表}
+\end{figure}
+\section{赛事维护与导入}
+管理员在后台赛事维护中选择数据类型，可新增、修改和删除记录。存在外键引用的记录按约束处理。数据导入先预览数量及来源提示，再执行事务导入；正常重复导入按自然键更新。首次一键部署已完成2022数据初始化，日常启动无需手动重复导入。
+
+
+小组积分的同分队伍继续比较相互战绩与纪律分；计算项仍相同时，页面标注同分待抽签。
+\end{document}
