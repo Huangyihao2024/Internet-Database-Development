@@ -4,6 +4,14 @@ namespace console\controllers;
 use Yii;
 use common\models\{User,DeveloperTeam,MemberProfile,Announcement,AssignmentFile,FanPost,FanComment};
 class WorldcupSetupController extends \yii\console\Controller {
+ public function actionEnsureTournament(){
+  $id=Yii::$app->db->createCommand('SELECT id FROM wc_data_tournament WHERE year=2022')->queryScalar();
+  if(!$id){if(Yii::$app->runAction('worldcup-import/run')!==0)throw new \RuntimeException('世界杯数据初始化失败');}
+  $id=Yii::$app->db->createCommand('SELECT id FROM wc_data_tournament WHERE year=2022')->queryScalar();
+  $matches=(int)Yii::$app->db->createCommand('SELECT COUNT(*) FROM wc_data_match WHERE tournament_id=:id',[':id'=>$id])->queryScalar();
+  if($matches!==64)throw new \RuntimeException('2022赛事应有64场，请在后台检查数据导入；已有记录予以保留。');
+  echo "2022 tournament ready: 64 matches. Existing tournament records preserved.\n";
+ }
  public function actionSeed(){
   $file=getenv('WORLD_CUP_ACCOUNT_FILE');if(!$file||!is_file($file))throw new \RuntimeException('初始化账号文件不存在');
   $accounts=json_decode(file_get_contents($file),true,512,JSON_THROW_ON_ERROR);

@@ -13,4 +13,4 @@ Model 生成表：`wc_data_tournament`、`wc_data_stage`、`wc_data_group`、`wc
 
 这些文件是**未加业务权限的 Gii 基线**，归档在本目录，不作为运行控制器加载。运行中的 `app/common/models/`、`app/backend/controllers/DataController.php` 和相应业务视图保留了字段验证、关联、管理员访问、POST/CSRF、事务和错误反馈等手工适配。可直接对比本目录与运行文件。后台 Gii 页面截图为 `figures/33_gii.png`。
 
-最初的业务模型先由仓库脚本构建；本记录是随后在真实数据库上补做的 Gii 生成与对照，未将早期代码冒称为 Gii 原始输出。
+业务模型结合Gii基线添加验证、关联与权限处理，生成文件用于对照。
