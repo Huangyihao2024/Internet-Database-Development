@@ -18,7 +18,7 @@ return [
         '@npm'   => '@vendor/npm-asset',
     ],
     'vendorPath' => dirname(dirname(__DIR__)) . '/vendor',
-    'on beforeRequest'=>static function(){ if (!(Yii::$app instanceof \yii\web\Application)) return; $lang=Yii::$app->request->get('lang'); if (in_array($lang,['zh-CN','en-US'],true)) Yii::$app->session->set('language',$lang); Yii::$app->language=Yii::$app->session->get('language','zh-CN'); },
+    'on beforeRequest'=>static function(){ if (!(Yii::$app instanceof \yii\web\Application)) return; Yii::info(['method'=>Yii::$app->request->method,'isAjax'=>Yii::$app->request->isAjax,'isGuest'=>Yii::$app->user->isGuest],'team.request'); $lang=Yii::$app->request->get('lang'); if (in_array($lang,['zh-CN','en-US'],true)) Yii::$app->session->set('language',$lang); Yii::$app->language=Yii::$app->session->get('language','zh-CN'); },
     'components' => [
         'i18n'=>['translations'=>['app'=>['class'=>\yii\i18n\PhpMessageSource::class,'basePath'=>'@common/messages','sourceLanguage'=>'zh-CN']]],
         'urlManager'=>['class'=>\common\components\CompatibleUrlManager::class],
