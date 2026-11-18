@@ -1,0 +1,48 @@
+\documentclass[UTF8,a4paper,11pt,fontset=windows]{ctexart}
+\usepackage[margin=2.1cm]{geometry}
+\usepackage{graphicx,float,booktabs,tabularx,fancyhdr,xurl,fvextra}
+\usepackage[hidelinks]{hyperref}
+\setlength{\parskip}{.25em}\setlength{\emergencystretch}{2em}
+\renewcommand{\arraystretch}{1.2}\raggedbottom
+\ctexset{section={format={\large\bfseries\raggedright},beforeskip=1.2ex,afterskip=.6ex}}
+\linespread{1.12}
+\pagestyle{fancy}\fancyhf{}\fancyhead[L]{互联网数据库开发 · 绿茵数据团队}
+\fancyhead[R]{绿茵视界}\fancyfoot[C]{\thepage}\setlength{\headheight}{14pt}
+\begin{document}
+\begin{titlepage}\thispagestyle{empty}\centering
+\vspace*{.6cm}\includegraphics[width=.43\textwidth]{../../figures/nankai_logo_color.png}
+\vspace{.9cm}\rule{.88\textwidth}{.8pt}\par\vspace{.55cm}
+{\fontsize{27pt}{35pt}\selectfont\bfseries 互联网数据库开发课程设计\par}
+\vspace{.65cm}{\fontsize{21pt}{29pt}\selectfont\bfseries 需求文档\par}
+\vspace{.55cm}\rule{.88\textwidth}{.8pt}\par\vspace{1.1cm}
+{\Large 绿茵视界\par 世界杯赛事数据与球迷互动平台\par}
+\vspace{.65cm}{\large 绿茵数据团队\par 黄奕浩\quad 2413581\quad 组长\par 王乐之\quad 2411302\par}
+\end{titlepage}
+\section{项目目标与用户}
+绿茵视界围绕世界杯赛事与球迷交流组织内容，首个数据届次采用2022年世界杯，并保留多届赛事扩展。前台包含比赛、球队、球员、积分榜、射手榜、收藏、数据中心和球迷社区；后台维护赛事数据、公告与社区内容。开发团队页展示两名开发者、分工和个人介绍，与体育国家队页面分别组织。
+
+访客可以浏览公开内容和下载课程材料；注册球迷可以完善资料、发布话题、评论与回复，使用收藏；管理员负责团队资料、公告、审核和系统日志。页面的权限与内容状态在服务器端检查。
+
+\section{公共与社区功能}
+注册填写用户名、邮箱、密码和图形验证码；重复用户名和邮箱被拒绝，注册账户为member角色。登录使用密码哈希验证，后台只允许admin角色。个人资料从会话确定用户编号，普通成员只修改自己的介绍，管理员可维护开发团队与成员信息。
+
+公告支持草稿、发布、撤下和删除，公开页只读取已发布且到达发布时间的记录。下载中心将个人与团队文件分类，下载前检查目录边界、文件是否存在和SHA256，记录通过编号定位，返回附件响应。
+
+球迷可以按关键词搜索话题、分页浏览和查看详情。话题可选择关联已录入比赛，也可独立讨论。发帖和评论提交后进入待审；编辑话题重新进入待审，作者可撤下自己的话题。评论可回复同一话题中的公开评论。管理员对话题及评论分别审核，处理后生成通知和日志。未公开话题不能通过直接编号读取。
+
+\section{赛事与数据需求}
+赛事模块按届次、阶段、球队、日期等条件查询比赛，详情区分常规、加时与点球大战。球队关联球员和参赛阵容，比赛事件用于射手与球队统计。收藏使用用户与目标的唯一约束。积分榜、射手榜按确定的规则计算，并与官方数据核对。
+
+动态图表从数据库读取球队进球对比、比赛进球趋势、阶段分布和球员对比，支持筛选和刷新，并处理空数据、错误和窄屏。赛事数据及图表由王乐之负责接入，公共模块提供会话身份、角色、日志、通知与比赛关联接口。
+
+\section{数据与安全约束}
+数据库包含20张业务表，采用wc\_模块\_实体命名，表和字段写COMMENT。公共及社区9表与赛事收藏11表通过外键关联。密码保存哈希，所有写请求校验CSRF，正文及回复转义显示，数据库查询使用ActiveRecord或参数绑定。后台写操作记录操作者、对象和时间，不保存口令与请求正文。
+
+邮件默认通过本机文件投递，通知表记录接收者、主题、内容、渠道和状态。SMTP参数放入本机配置。时间按指定时区展示，公共导航提供中英文切换，静态资源由AppAsset管理。
+
+\section{分工与成果}
+本人负责公共账户、开发团队、公告下载、球迷社区审核回复、邮件日志、公共布局与一键部署，以及需求、实现、部署文档和用户手册；负责完整录屏的组织、录制、讲解、剪辑和提交。王乐之负责赛事数据、收藏、统计图表、数据库设计、设计文档与PPT统稿，提供本人模块演示素材。
+
+最终交付需求、设计、实现、用户手册、部署文档、项目展示和5至15分钟录屏。PHP文件统一命名并有注释头；每人分别完成Model、Controller、View。SQL位于data/install.sql，团队材料在data/team，个人材料在data/personal，截图位于根目录figures。Git用于版本管理，Tower用于任务分配。
+
+\end{document}

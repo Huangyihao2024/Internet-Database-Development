@@ -1,4 +1,5 @@
 /.local/
+/data/team/_build/
 /app/vendor/
 /app/**/runtime/
 /app/**/tests/
