@@ -57,6 +57,12 @@ $p->exec("GRANT ALL ON zhixing_team.* TO 'zhixing_app'@'localhost'");
  run([sys.executable,release/'scripts/setup.py','--php-root',P,'--dsn','mysql:host=127.0.0.1;port=13318;dbname=zhixing_team','--db-user','zhixing_app','--password-stdin'],input=(s['app_password']+'\n').encode())
  state.write_text(json.dumps(s),encoding='utf-8')
 if not port(13318):s['mysql_pid']=spawn('mysql',[M/'bin/mysqld.exe','--no-defaults','--basedir='+str(M),'--datadir='+str(alias/'mysql-data'),'--log-error='+str(alias/'mysql.log'),'--bind-address=127.0.0.1','--port=13318','--mysqlx=OFF'],alias);wait(13318)
+for obsolete in (release/'data/team').glob('*2413581_2411302_2413628*'):
+ if obsolete.is_file():obsolete.unlink()
+for obsolete in [release/'docs/个人分工/2413628_黄乐仁_分工.md',release/'docs/02_三人分工与协作.md']:
+ if obsolete.exists():obsolete.unlink()
+accounts_file=release/'.local/accounts.json'
+if accounts_file.exists():accounts_file.write_text(json.dumps([x for x in json.loads(accounts_file.read_text(encoding='utf-8')) if x['student_id'] in ['2413581','2411302']],ensure_ascii=False,indent=2),encoding='utf-8')
 ini=release/'.local/php.ini'
 if 'extension=gd' not in ini.read_text(encoding='utf-8'):ini.write_text(ini.read_text(encoding='utf-8')+'\nextension=gd\n',encoding='utf-8')
 for name in ['frontend','backend']:
@@ -66,6 +72,7 @@ for name in ['frontend','backend']:
   run(['powershell','-NoProfile','-Command',f"$p=Get-CimInstance Win32_Process -Filter 'ProcessId = {int(pid)}'; if ($p -and $p.CommandLine.Contains('{marker}')) {{Stop-Process -Id {int(pid)}}}"])
 for side,p in [('frontend',8775),('backend',8776)]:
  if not port(p):s[side+'_pid']=spawn(side,[P/'php.exe','-c',release/'.local/php.ini','-S','127.0.0.1:'+str(p),'-t',release/'app'/side/'web'],P);wait(p)
+run([P/'php.exe','-c',release/'.local/php.ini',release/'app/yii','team-setup/upgrade'],cwd=P)
 run([P/'php.exe','-c',release/'.local/php.ini',release/'app/yii','team-setup/sync-downloads'],cwd=P)
 opener=urllib.request.build_opener(urllib.request.ProxyHandler({}))
 for p in [8775,8776]:

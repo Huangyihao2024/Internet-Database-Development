@@ -1,0 +1,2 @@
+<?php
+/** 团队留言、审核与公共服务；本人负责，AI辅助实现。 */ use yii\helpers\Html;$this->title='留言审核'; ?><h1>留言审核</h1><table><tr><th>作者</th><th>内容</th><th>状态</th><th>操作</th></tr><?php foreach($provider->models as $m): ?><tr><td><?= Html::encode($m->author->username) ?></td><td><?= Html::encode($m->content) ?></td><td><?= Html::encode($m->status) ?></td><td><?= Html::a('审核与回复',['update','id'=>$m->id]) ?></td></tr><?php endforeach ?></table><?= \yii\widgets\LinkPager::widget(['pagination'=>$provider->pagination]) ?>

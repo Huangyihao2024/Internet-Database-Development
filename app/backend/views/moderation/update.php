@@ -1,0 +1,2 @@
+<?php
+/** 团队留言、审核与公共服务；本人负责，AI辅助实现。 */ use yii\helpers\Html;$this->title='审核与回复'; ?><h1>审核与回复</h1><p class="prose"><?= Html::encode($model->content) ?></p><?= Html::beginForm() ?><label>状态</label><?= Html::dropDownList('status',$model->status,['pending'=>'待审核','published'=>'通过公开','rejected'=>'驳回','archived'=>'撤下']) ?><label>管理员回复</label><?= Html::textarea('reply_content',$model->reply_content,['maxlength'=>5000]) ?><button>保存审核</button><?= Html::endForm() ?>

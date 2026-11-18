@@ -18,16 +18,16 @@
 \vspace{.55cm}\rule{.88\textwidth}{.8pt}\par
 \vspace{1.3cm}{\Large 知行学习团队\par}
 \vspace{.6cm}{\large 黄奕浩\quad 2413581\quad 组长\par
-王乐之\quad 2411302\par 黄乐仁\quad 2413628\par}
+王乐之\quad 2411302\par}
 \end{titlepage}
 \section{公共模块与MVC调用}
 本人负责包含登录注册、团队及成员展示、后台资料维护、公告发布与作业下载。公共Model封装数据约束，Controller检查身份与处理请求，View只负责显示转义后的内容和表单。以成员展示为例，MemberController查询MemberProfile后传给详情视图，后台修改同一记录，因此前台刷新即可读取更新后的介绍。
 
 \section{账户与权限}
-普通注册账户固定为member角色，密码经Yii安全组件生成哈希。后台登录额外检查admin角色，并对整个后台应用应用访问控制。成员编辑动作从当前登录会话确定记录，不使用请求里的用户ID定位编辑目标。site/me提供其他两位模块可复用的身份接口。
+普通注册账户固定为member角色，密码经Yii安全组件生成哈希。后台登录额外检查admin角色，并对整个后台应用应用访问控制。成员编辑动作从当前登录会话确定记录，不使用请求里的用户ID定位编辑目标。site/me提供另一位模块可复用的身份接口。
 
 \section{团队首页与成员维护}
-首页采用深绿导航、浅色介绍区与成员卡片组织内容，页面读取数据库中的团队介绍、成员资料和最新公告。三位成员的分工用简短介绍展示。后台提供团队介绍表单、成员列表和编辑表单，字段包含姓名、学号与介绍。
+首页采用深绿导航、浅色介绍区与成员卡片组织内容，页面读取数据库中的团队介绍、成员资料和最新公告。两位成员的分工用简短介绍展示。后台提供团队介绍表单、成员列表和编辑表单，字段包含姓名、学号与介绍。
 
 \begin{figure}[H]\centering
 \includegraphics[width=\linewidth,height=.40\textheight,keepaspectratio]{../../figures/01-首页.png}
@@ -53,15 +53,15 @@ AssignmentFile保存文件类别、相对路径和SHA256。下载动作仅接收
 \caption{团队材料与个人作业下载}
 \end{figure}
 \section{交接接口}
-王乐之可在资源发布、收藏等动作中使用Yii当前会话身份和site/me返回的用户编号，所有权需在对应模块服务器端检查。黄乐仁可在报名和留言中引用user主键。公共布局与Model保持独立，资源和活动模块可以新增导航入口，不需要修改已经完成的身份与下载逻辑。
+王乐之可在资源发布、收藏等动作中使用Yii当前会话身份和site/me返回的用户编号，所有权需在对应模块服务器端检查。王乐之可在报名和资源评论中引用user主键。公共布局与Model保持独立，资源和活动模块可以新增导航入口，不需要修改已经完成的身份与下载逻辑。
 
-当前演示使用三条成员资料和五条自拟公告。其他两位负责的资源、活动、留言和日志尚未接入，不以公共模块的页面截图代替他们的实现成果。
+当前演示使用两条成员资料和五条示例公告。资源、活动与资源评论待王乐之接入。
 \section{协作记录、主要代码与目录}
-Git记录取自实际仓库的git log，主要代码及目录截图来自实际源文件和受控文件清单，使用浏览器只读展示而非伪装成终端。任务分工已写入成员MD；Tower截图待登录完成真实任务操作后补入，步骤见截图采集说明。
+项目通过Git管理版本，任务分工、提交记录、主要代码与目录如下。
 
 \begin{figure}[H]\centering
 \includegraphics[width=\linewidth,height=.33\textheight,keepaspectratio]{../../figures/git_history.png}
-\caption{实际Git提交记录}
+\caption{Git提交记录}
 \end{figure}
 
 \begin{figure}[H]\centering
@@ -78,7 +78,7 @@ Git记录取自实际仓库的git log，主要代码及目录截图来自实际�
 
 \begin{figure}[H]\centering
 \includegraphics[width=\linewidth,height=.33\textheight,keepaspectratio]{../../figures/deployment.png}
-\caption{一键部署实际运行结果}
+\caption{一键部署运行结果}
 \end{figure}
 
 \begin{figure}[H]\centering
@@ -86,7 +86,29 @@ Git记录取自实际仓库的git log，主要代码及目录截图来自实际�
 \caption{注册验证码}
 \end{figure}
 \section{主要代码节选}
-下载文件的目录边界与摘要检查如下，来源为项目实际Model。
+下载文件的目录边界与摘要检查如下。
 \VerbatimInput[fontsize=\scriptsize,breaklines=true,breakanywhere=true,firstline=12,lastline=22]{../../app/common/models/AssignmentFile.php}
+\section{团队留言、审核与回复}
+本人新增完成留言提交、待审、通过、驳回、撤下与管理员回复。当前用户由会话确定，访客不能提交，普通成员不能进入审核后台。公开列表只查询published状态，内容和回复均按文本转义。审核结果通过公共邮件服务写入本机EML，管理写操作通过公共基类记录数据库日志，不记录口令和请求正文。
+
+\begin{figure}[H]\centering
+\includegraphics[width=\linewidth,height=.33\textheight,keepaspectratio]{../../figures/guestbook_pending.png}
+\caption{后台留言审核}
+\end{figure}
+
+\begin{figure}[H]\centering
+\includegraphics[width=\linewidth,height=.33\textheight,keepaspectratio]{../../figures/guestbook_public.png}
+\caption{审核通过与管理员回复}
+\end{figure}
+
+\begin{figure}[H]\centering
+\includegraphics[width=\linewidth,height=.33\textheight,keepaspectratio]{../../figures/mail_records.png}
+\caption{本机邮件投递记录}
+\end{figure}
+
+\begin{figure}[H]\centering
+\includegraphics[width=\linewidth,height=.33\textheight,keepaspectratio]{../../figures/audit_records.png}
+\caption{数据库操作日志}
+\end{figure}
 
 \end{document}

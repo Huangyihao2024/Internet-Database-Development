@@ -71,7 +71,7 @@ CREATE TABLE `assignment_file` (
   PRIMARY KEY (`id`),
   KEY `owner_id` (`owner_id`),
   CONSTRAINT `assignment_file_ibfk_1` FOREIGN KEY (`owner_id`) REFERENCES `user` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 CREATE TABLE `resource_category` (
   `id` bigint NOT NULL AUTO_INCREMENT,
@@ -175,11 +175,13 @@ CREATE TABLE `guestbook_message` (
   `status` varchar(20) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'pending',
   `created_at` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `updated_at` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  `reply_content` text COLLATE utf8mb4_unicode_ci,
+  `replied_at` datetime DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `idx_message_status` (`status`),
   KEY `user_id` (`user_id`),
   CONSTRAINT `guestbook_message_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `user` (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 CREATE TABLE `resource_comment` (
   `id` bigint NOT NULL AUTO_INCREMENT,
@@ -209,4 +211,4 @@ CREATE TABLE `audit_log` (
   KEY `idx_audit_object` (`object_type`,`object_id`),
   KEY `actor_id` (`actor_id`),
   CONSTRAINT `audit_log_ibfk_1` FOREIGN KEY (`actor_id`) REFERENCES `user` (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;

@@ -18,7 +18,7 @@
 \vspace{.55cm}\rule{.88\textwidth}{.8pt}\par
 \vspace{1.3cm}{\Large 知行学习团队\par}
 \vspace{.6cm}{\large 黄奕浩\quad 2413581\quad 组长\par
-王乐之\quad 2411302\par 黄乐仁\quad 2413628\par}
+王乐之\quad 2411302\par}
 \end{titlepage}
 \section{运行组成}
 本机开发使用PHP 8.3.36、Yii2 2.0.55和MySQL 8.0.44。前台监听127.0.0.1:8771，后台监听127.0.0.1:8772，独立数据库实例监听127.0.0.1:13316。数据库名为zhixing\_team，包含15张业务表。原MySQL80服务及其数据不参与本项目开发实例。
@@ -40,7 +40,7 @@ python scripts/setup.py\\
 --db-user zhixing\_app
 \end{quote}
 
-脚本把Composer及缓存放入项目.local目录，核对Composer官方SHA256，按composer.lock安装依赖，执行Development初始化，导入空库结构并生成本机数据库配置。随后创建随机密码的三位成员开发账号、三条成员资料、五条演示公告并登记实际下载文件。已有本机配置时脚本停止，不覆盖现有连接信息。
+脚本把Composer及缓存放入项目.local目录，核对Composer官方SHA256，按composer.lock安装依赖，执行Development初始化，导入空库结构并生成本机数据库配置。随后创建随机密码的两位成员开发账号、两条成员资料、五条演示公告并登记实际下载文件。已有本机配置时脚本停止，不覆盖现有连接信息。
 
 在PHP目录分别执行PHP内置服务命令，带上项目.local/php.ini配置，文档根目录分别指向app/frontend/web与app/backend/web；端口采用8771和8772。该方式用于本机开发，不作为公网生产服务器。正式公网部署还需Web服务器、HTTPS以及Production环境配置。
 

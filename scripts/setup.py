@@ -27,7 +27,7 @@ v=local/'setup-input.json';v.write_text(json.dumps({'dsn':args.dsn,'username':ar
 try:run(R/'scripts/configure.php')
 finally:v.unlink(missing_ok=True)
 accounts=[]
-for name,sid,user,role,bio in [('黄奕浩','2413581','huangyihao','admin','负责公共功能与统筹。'),('王乐之','2411302','wanglezhi','member','负责资源模块。'),('黄乐仁','2413628','huangleren','member','负责活动交流模块。')]:accounts.append(dict(name=name,student_id=sid,username=user,role=role,bio=bio,password=secrets.token_urlsafe(16)))
+for name,sid,user,role,bio in [('黄奕浩','2413581','huangyihao','admin','负责公共功能、团队留言审核、邮件、日志、部署及文档。'),('王乐之','2411302','wanglezhi','member','负责资源、活动报名、资源评论、动态图表、设计及展示。')]:accounts.append(dict(name=name,student_id=sid,username=user,role=role,bio=bio,password=secrets.token_urlsafe(16)))
 f=local/'accounts.json';f.write_text(json.dumps(accounts,ensure_ascii=False,indent=2),encoding='utf-8');env['ZHIXING_ACCOUNT_FILE']=str(f);run(R/'app/yii','team-setup/seed')
 print('Setup complete. Local accounts: '+str(f))
 print('Start frontend: php -c '+str(ini)+' -S 127.0.0.1:8771 -t '+str(R/'app/frontend/web'))

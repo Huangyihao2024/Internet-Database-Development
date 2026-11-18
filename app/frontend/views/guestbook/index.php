@@ -1,0 +1,4 @@
+<?php
+/** 团队留言、审核与公共服务；本人负责，AI辅助实现。 */ use yii\helpers\Html;use yii\widgets\ActiveForm;$this->title='团队留言'; ?><h1><?= Html::encode($this->title) ?></h1><p>分享学习想法，或为团队留下建议。留言审核通过后公开。</p>
+<?php foreach($messages as $m): ?><article class="card"><strong><?= Html::encode($m->author->username) ?></strong><p class="prose"><?= Html::encode($m->content) ?></p><?php if($m->reply_content): ?><p class="prose">管理员回复：<?= Html::encode($m->reply_content) ?></p><?php endif ?></article><?php endforeach ?><?= \yii\widgets\LinkPager::widget(['pagination'=>$pages]) ?>
+<?php if(Yii::$app->user->isGuest): ?><p><?= Html::a('登录后留言',['site/login'],['class'=>'button']) ?></p><?php else: ?><?php $f=ActiveForm::begin(['enableClientValidation'=>false]) ?><?= $f->errorSummary($model) ?><?= $f->field($model,'content')->textarea() ?><button>提交留言</button><?php ActiveForm::end() ?><?php endif ?>

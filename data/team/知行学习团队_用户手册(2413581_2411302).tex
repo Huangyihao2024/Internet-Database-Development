@@ -1,0 +1,34 @@
+\documentclass[UTF8,a4paper,11pt,fontset=windows]{ctexart}
+\usepackage[margin=2.1cm]{geometry}
+\usepackage{graphicx,float,booktabs,tabularx,fancyhdr,xurl,fvextra}
+\usepackage[hidelinks]{hyperref}
+\setlength{\parskip}{.25em}
+\setlength{\emergencystretch}{2em}
+\renewcommand{\arraystretch}{1.2}
+\pagestyle{fancy}\fancyhf{}
+\fancyhead[L]{互联网数据库开发 · 知行学习团队}
+\fancyhead[R]{2413581 黄奕浩}\fancyfoot[C]{\thepage}
+\setlength{\headheight}{14pt}\raggedbottom
+\begin{document}
+\begin{titlepage}\thispagestyle{empty}\centering
+\vspace*{.6cm}\includegraphics[width=.43\textwidth]{../../figures/nankai_logo_color.png}
+\vspace{.9cm}\rule{.88\textwidth}{.8pt}\par\vspace{.55cm}
+{\fontsize{27pt}{35pt}\selectfont\bfseries 互联网数据库开发课程设计\par}
+\vspace{.65cm}{\fontsize{21pt}{29pt}\selectfont\bfseries 用户手册\par}
+\vspace{.55cm}\rule{.88\textwidth}{.8pt}\par
+\vspace{1.3cm}{\Large 知行学习团队\par}
+\vspace{.6cm}{\large 黄奕浩\quad 2413581\quad 组长\par
+王乐之\quad 2411302\par}
+\end{titlepage}
+\section{访问与账户}
+打开前台地址浏览团队、成员、公告与作业下载。普通成员注册时填写用户名、邮箱、密码与验证码；注册后可完善个人介绍。后台只允许管理员登录，账号口令保存在本机忽略目录，不写入公开文档。
+\section{成员资料与公告}
+成员登录后点击“我的资料”，修改姓名、学号或介绍并保存；不能编辑他人资料。管理员在后台“团队介绍”和“成员管理”维护展示内容，在“公告管理”新增或编辑公告，草稿不公开，发布后前台可见，撤下后隐藏。删除只使用页面中的POST按钮。
+\section{留言与审核}
+登录前台“团队留言”后提交内容，页面提示待审核；未登录用户先登录。管理员在“留言审核”选择“审核与回复”，设为通过公开并填写回复，保存后公开列表显示内容与回复。驳回或撤下时不再公开。邮件通知默认保存为本机EML，不会发送外部邮件；“邮件记录”可查看文件记录。
+\section{操作日志与下载}
+管理员可在“操作日志”查看操作者编号、动作、对象和时间。作业下载页按团队和个人分组，只有存在且摘要正确的文件可下载。提示不可用时由管理员检查文件并同步下载登记，不绕过路径或摘要检查。
+\section{部署及待接入模块}
+双击仓库“一键部署.cmd”，等待独立建库、初始化和前后台检查成功；具体端口及前提见部署文档。资源、活动、图表与资源评论由另一位成员实现后补齐相应操作章节，不将未实现功能写成已完成。
+
+\end{document}

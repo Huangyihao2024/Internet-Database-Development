@@ -7,6 +7,18 @@ namespace console\controllers;
 use Yii;
 use common\models\{User,Team,MemberProfile,Announcement,AssignmentFile};
 class TeamSetupController extends \yii\console\Controller {
+ public function actionUpgrade(){
+  require_once \Yii::getAlias('@console').'/migrations/m261118_020000_guestbook_reply.php';
+  (new \console\migrations\m261118_020000_guestbook_reply(['db'=>Yii::$app->db]))->safeUp();
+  MemberProfile::deleteAll(['student_number'=>'2413628']);
+  AssignmentFile::deleteAll(['like','relative_path','2413581_2411302_2413628']);
+  User::updateAll(['status'=>0],['username'=>'huangleren']);
+  if(\common\models\GuestbookMessage::find()->count()==0){
+   $uid=User::findByUsername('huangyihao')->id;
+   for($i=1;$i<=5;$i++){$m=new \common\models\GuestbookMessage();$m->user_id=$uid;$m->content='【演示留言】学习交流示例'.$i.'，用于展示审核流程。';$m->status=$i<=2?'published':'pending';$m->save(false);}
+  }
+  echo "Two-member team and guestbook upgrade completed.\n";
+ }
  public function actionSeed() {
   $path=getenv('ZHIXING_ACCOUNT_FILE');
   if (!$path || !is_file($path)) throw new \RuntimeException('请通过本地初始化脚本提供账号文件。');
@@ -25,7 +37,7 @@ class TeamSetupController extends \yii\console\Controller {
     }
    }
   });
-  $this->actionSyncDownloads();echo "Team sample data initialized.\n";
+  $this->actionUpgrade();$this->actionSyncDownloads();echo "Team sample data initialized.\n";
  }
  public function actionSyncDownloads() {
   $base=Yii::getAlias('@common').'/../../data';
