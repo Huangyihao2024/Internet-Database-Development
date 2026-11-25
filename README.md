@@ -20,3 +20,9 @@
 
 Windows准备PHP 8.3、MySQL 8和Python后，双击“一键部署.cmd”，自动创建独立数据库wc_portal（13328）、初始化配置与公共数据并启动前台8781/后台8782。首次依赖下载需要网络。可用WORLD_CUP_PHP_ROOT、WORLD_CUP_MYSQL_ROOT指定软件目录；账号保存在.local/oneclick/release/.local/accounts.json，不进入Git。
 再次运行保留数据库并更新代码；“停止运行.cmd”正常关闭本项目服务。scripts/setup.py支持专用空库配置，详细步骤见部署文档。
+
+## 赛事模块（王乐之 2411302）
+
+前台新增比赛、球队、球员、积分榜、收藏与动态图表；后台新增赛事维护和数据导入。首次运行需以管理员在后台“数据导入”预览并执行，或在已配置的 `app` 目录下执行 `php yii worldcup-import/preview` 与 `php yii worldcup-import/run`。导入前可运行 `python scripts/build_worldcup_data.py` 和 `python scripts/check_worldcup_data.py` 校验公开原始数据。重复导入按自然键去重。
+
+20表数据字典、ER图、模块图、流程图、统计口径与实测范围见 `docs/绿茵数据团队_数据库与赛事模块设计(2413581_2411302).md` 和 `docs/绿茵数据团队_赛事模块实现与交接(2413581_2411302).md`。可编辑图源位于 `figures/`。本次不含最终展示PPT。

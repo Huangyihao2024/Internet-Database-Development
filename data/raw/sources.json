@@ -2,8 +2,11 @@
   {
     "file": "worldcup_2022.txt",
     "url": "https://raw.githubusercontent.com/openfootball/worldcup/master/2022--qatar/cup.txt",
-    "bytes": 8301,
-    "sha256": "37b3a3027f954f2b9dca76a7a8946cb04ee85d3227058fe79defd7d0d764917b"
+    "bytes": 8116,
+    "sha256": "0c5acc8c28310acf5564a24ec6ed2e2f1a6cd0c18920a7eebc786b084b5de01b",
+    "original_manifest_bytes": 8301,
+    "original_manifest_sha256": "37b3a3027f954f2b9dca76a7a8946cb04ee85d3227058fe79defd7d0d764917b",
+    "note": "仓库原 sources.json 记录的原文摘要与压缩包内文件不一致；此处按实际压缩包文件重算。"
   },
   {
     "file": "openfootball_LICENSE.md",
@@ -16,5 +19,19 @@
     "url": "https://raw.githubusercontent.com/openfootball/worldcup/master/2022--qatar/cup_finals.txt",
     "bytes": 3261,
     "sha256": "4eabfd0d7cb78164e123cad8ecfe0afd4349ed4c4092c2602b2b4327421db0b6"
+  },
+  {
+    "file": "worldcup_2022_full.json",
+    "url": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2022/worldcup-full.json",
+    "bytes": 183317,
+    "sha256": "b73fb728e6d04f176e986f4bae7642770f36fae59653bde2a8e4087f457bd169",
+    "license": "CC0-1.0 / OpenFootball public-domain repository"
+  },
+  {
+    "file": "players_2022_stiles.csv",
+    "url": "https://raw.githubusercontent.com/stiles/world-cup/master/data/processed/2022/players.csv",
+    "bytes": 146720,
+    "sha256": "cdaec75904695c38cf87711baf626b79126e9d005050231868b669e383611356",
+    "license": "Repository MIT; source data from public FIFA API, check FIFA reuse terms"
   }
 ]
