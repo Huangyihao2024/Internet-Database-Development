@@ -81,3 +81,19 @@ assert filtered.status_code==200 and filtered.json()['trend']
 invalid=requests.get(front+'statistics/data&tournament_id=1&stage_id=999999',timeout=10)
 assert invalid.status_code==400
 print('PASS chart data, filters and invalid-stage response')
+
+# 核对真实数据库生成的小组前两名及射手榜，不使用页面写死的数据。
+standing=requests.get(front+'standing/index',timeout=10)
+assert standing.status_code==200
+tables=BeautifulSoup(standing.text,'html.parser').select('table')
+group_rows={}
+for row in tables[0].select('tr')[1:]:
+    cells=[cell.get_text(' ',strip=True) for cell in row.select('td')]
+    group_rows.setdefault(cells[0],[]).append(cells[1])
+expected={'A':['Netherlands','Senegal'],'B':['England','USA'],'C':['Argentina','Poland'],
+          'D':['France','Australia'],'E':['Japan','Spain'],'F':['Morocco','Croatia'],
+          'G':['Brazil','Switzerland'],'H':['Portugal','South Korea']}
+assert {group:teams[:2] for group,teams in group_rows.items()}==expected,group_rows
+scorers=[row.get_text(' ',strip=True) for row in tables[1].select('tr')[1:3]]
+assert scorers[0].startswith('Kylian Mbappe France 8') and scorers[1].startswith('Lionel Messi Argentina 7'),scorers
+print('PASS all eight group leaders and top scorers from live MySQL')

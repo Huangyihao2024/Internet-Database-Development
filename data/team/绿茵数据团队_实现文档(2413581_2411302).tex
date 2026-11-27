@@ -19,7 +19,7 @@
 \vspace{.65cm}{\large 绿茵数据团队\par 黄奕浩\quad 2413581\quad 组长\par 王乐之\quad 2411302\par}
 \end{titlepage}
 \section{公共模块结构}
-本人负责公共及社区9张表：用户、开发团队、成员、公告、作业文件、审计、通知、话题和评论。Model维护约束及关系，Controller检查身份和处理请求，View负责表单与转义后的内容。页面使用海军蓝、球场绿与浅色内容区，统一文字层级、表格垂直对齐和手机布局。
+黄奕浩（2413581）负责公共及社区9张表：用户、开发团队、成员、公告、作业文件、审计、通知、话题和评论。王乐之（2411302）负责赛事及收藏11张表、数据导入、赛事MVC、积分射手统计和动态图表，并统稿20表数据库设计。Model维护约束及关系，Controller检查身份和处理请求，View负责表单与转义后的内容。页面使用海军蓝、球场绿与浅色内容区，统一文字层级、表格垂直对齐和手机布局。
 
 \begin{figure}[H]\centering
 \includegraphics[width=\linewidth,height=.33\textheight,keepaspectratio]{../../figures/01_home.png}
@@ -92,7 +92,7 @@ AdminController在后台写操作结束后调用AuditLog，社区提交与撤下
 \end{figure}
 
 \section{代码、目录与提交}
-项目按MVC组织，公共接口、业务文件和提交记录如下。Tower任务总览及详情截图在项目建立并分配任务后汇入本节。
+项目按MVC组织，公共接口、业务文件和提交记录如下。图中的Git材料包括原仓库截图；本次确证的真实提交另见图\ref{fig:git-new}。未取得Tower登录会话，报告不使用虚构的Tower截图。
 
 \begin{figure}[H]\centering
 \includegraphics[width=\linewidth,height=.24\textheight,keepaspectratio]{../../figures/15_git.png}
@@ -109,7 +109,40 @@ AdminController在后台写操作结束后调用AuditLog，社区提交与撤下
 \caption{社区Model代码}
 \end{figure}
 
+\section{赛事数据库、导入与模型}
+20表分为公共与社区9表、赛事及收藏11表。后者包括届次、阶段、小组、球场、球队、球员、阵容、比赛、事件、球队收藏和比赛收藏。表结构采用InnoDB及utf8mb4，主外键、唯一键和索引由\path{data/install.sql}约束。逐字段数据字典、完整ER图、系统模块图和导入流程图在随附赛事数据库设计文档及\path{figures/*.mmd}，图源可编辑。
+
+\begin{figure}[H]\centering\includegraphics[width=.9\linewidth,height=.27\textheight,keepaspectratio]{../../figures/绿茵数据团队_20表ER图(2413581_2411302).png}\caption{20表ER图总览；随附SVG支持放大查看}\end{figure}
+\begin{figure}[H]\centering\includegraphics[width=.70\linewidth,height=.25\textheight,keepaspectratio]{../../figures/绿茵数据团队_系统模块图(2413581_2411302).png}\caption{系统模块与数据库访问关系}\end{figure}
+\begin{figure}[H]\centering\includegraphics[width=.54\linewidth,height=.32\textheight,keepaspectratio]{../../figures/绿茵数据团队_数据导入流程图(2413581_2411302).png}\caption{数据预览、事务导入和错误回滚流程}\end{figure}
+
+\path{scripts/build_worldcup_data.py}解析公开世界杯赛果，核对64场比分、日期及事件；球员阵容保留公开来源、许可和摘要。四条原始文本省略开赛时间，在预览中明确提示。\path{WorldcupImportController}先校验、预览，再用事务导入；届次、球队代码和比赛事件来源键用于去重，失败回滚。实测连续执行两次后，数据库仍为1届、6阶段、8组、8球场、32队、831球员、831条阵容、64场比赛和438个事件。
+
+11个赛事及收藏ActiveRecord提供字段验证与关联。项目先完成手工业务模型，再在真实数据库运行Yii Gii CLI生成11个Model和一套比赛CRUD基线；原样输出及修改记录在\path{docs/gii-generated/}，运行页见图\ref{fig:gii}。公共账户、管理员基类、日志和社区接口均复用现有实现。
+
+\begin{figure}[H]\centering\includegraphics[width=.83\linewidth,height=.27\textheight,keepaspectratio]{../../figures/30_admin_import.png}\caption{后台导入预览与源数据提示}\end{figure}
+\begin{figure}[H]\centering\includegraphics[width=.83\linewidth,height=.25\textheight,keepaspectratio]{../../figures/33_gii.png}\caption{真实Gii生成页}\label{fig:gii}\end{figure}
+
+\section{赛事前后台功能与统计}
+前台比赛页支持日期、球队、阶段、关键词、排序与分页，详情分别展示90分钟、加时和点球大战，并列出进球、乌龙球及红黄牌。球队、球员页展示阵容、比赛记录和个人赛事统计。普通登录用户可收藏或取消收藏球队及比赛。后台以管理员权限维护赛事数据，表单保留Yii CSRF。
+
+小组积分使用90分钟比分，胜3分、平1分；先比较总积分、净胜球、进球数，再比较相互比赛积分、净胜球、进球数及纪律分。资料无法区分黄牌后直接红牌和两黄变红时，纪律分只按现有事件推断；完全并列时提示待官方抽签。正式球队进球含加时，不含点球大战；射手榜仅计普通进球及比赛内点球，排除乌龙球和点球大战。四图从MySQL实时读取，届次、阶段、球队变化时重新请求；手机布局及无数据错误状态已处理。
+
+\begin{figure}[H]\centering\includegraphics[width=.86\linewidth,height=.25\textheight,keepaspectratio]{../../figures/20_match_detail.png}\caption{比赛详情与不同进球口径}\end{figure}
+\begin{figure}[H]\centering\includegraphics[width=.86\linewidth,height=.31\textheight,keepaspectratio,trim=0 5600 0 0,clip]{../../figures/25_standings.png}\caption{小组积分榜A至E组}\end{figure}
+\begin{figure}[H]\centering\includegraphics[width=.86\linewidth,height=.22\textheight,keepaspectratio]{../../figures/26_scorers.png}\caption{数据库生成的射手榜}\end{figure}
+\begin{figure}[H]\centering\includegraphics[width=.86\linewidth,height=.28\textheight,keepaspectratio]{../../figures/27_charts.png}\caption{MySQL实时聚合的四类图表}\end{figure}
+\begin{figure}[H]\centering\includegraphics[width=.86\linewidth,height=.22\textheight,keepaspectratio]{../../figures/28_favorites.png}\caption{个人球队与比赛收藏}\end{figure}
+\begin{figure}[H]\centering\includegraphics[width=.86\linewidth,height=.22\textheight,keepaspectratio]{../../figures/29_admin_data.png}\caption{后台赛事维护}\end{figure}
+
+\section{运行验收、工作量与项目管理证据}
+在PHP 8.3.37、MySQL 8.0.46及锁定的91个Composer依赖上完成实际验收：源数据检查通过64场、32队、8球场、172个正式进球和26个点球大战命中；导入预览与重复导入无重复。HTTP脚本验证登录、收藏、后台球场增改删、导入、图表筛选及错误请求，社区列表仍可访问。一键部署重启后前后台分别在8781和8782返回成功页面。真实截图保存在\path{figures/19_matches.png}至\path{figures/34_git_commit.png}；复核脚本在\path{scripts/check_worldcup_data.py}及\path{scripts/check_live_worldcup.py}。
+
+黄奕浩完成9表公共及社区业务、部署与录屏组织；王乐之完成11表赛事与收藏模型、64场导入、6个前台控制器、后台维护、统计与图表、20表设计及运行截图。工作量按实际文件、数据行数和验收结果陈述，不折算虚构工时。赛事代码及文档已提交至GitHub的\path{just_leming}分支；Tower无可访问的真实项目会话，待项目成员授权后补入任务、负责人和状态的实际记录。
+
+\begin{figure}[H]\centering\includegraphics[width=.86\linewidth,height=.23\textheight,keepaspectratio]{../../figures/34_git_commit.png}\caption{GitHub真实提交记录}\label{fig:git-new}\end{figure}
+
 \section{部署与接口交接}
-一键部署完成独立建库、随机口令、配置、结构导入、公共样例与服务启动，停止脚本保留数据。赛事模块可使用公共用户、管理员基类、日志和通知服务。比赛表录入后，社区发帖界面自动提供关联选项。赛事查询、收藏、积分射手榜和图表待王乐之接入；完整PPT和录屏在全组页面齐备后整合。
+一键部署完成独立建库、随机口令、配置、结构导入、公共样例与服务启动，停止脚本保留数据。赛事模块已经复用公共用户、管理员基类、日志和通知服务；比赛导入后，社区发帖界面提供关联选项。组长录屏可按接口交接与录屏文档依次演示前后台、导入、收藏和四图。最终展示PPT按本次任务要求暂缓，完整课程录屏需组长结合两人内容录制。
 
 \end{document}

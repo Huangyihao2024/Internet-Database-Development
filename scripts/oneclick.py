@@ -17,6 +17,12 @@ phpcmd=shutil.which('php');mysqlcmd=shutil.which('mysqld') or shutil.which('mysq
 P=Path(os.environ.get('WORLD_CUP_PHP_ROOT') or (str(Path(phpcmd).parent) if phpcmd else str(R.parents[1]/'个人实验文件夹3/运行环境/php')))
 M=Path(os.environ.get('WORLD_CUP_MYSQL_ROOT') or (str(Path(mysqlcmd).parent.parent) if mysqlcmd else 'D:/MySQL/MySQL Server 8.0'))
 if not (P/'php.exe').exists() or not (M/'bin/mysqld.exe').exists():raise SystemExit('Install PHP 8.3+ and MySQL 8, or set WORLD_CUP_PHP_ROOT / WORLD_CUP_MYSQL_ROOT. No database setup is required manually.')
+# MySQL 在部分 Windows 环境下无法从中文安装路径加载插件，给程序目录建立 ASCII 别名。
+if any(ord(c)>127 for c in str(M)):
+ mysql_alias=Path('D:/CodexTools')/('mysql-'+hashlib.sha256(str(M).encode()).hexdigest()[:10])
+ mysql_alias.parent.mkdir(parents=True,exist_ok=True)
+ if not mysql_alias.exists():run(['cmd','/c','mklink','/J',str(mysql_alias),str(M)],stdout=subprocess.DEVNULL)
+ M=mysql_alias
 state=L/'state.json';release=L/'release';alias=Path('D:/CodexTools')/('worldcup-deploy-'+hashlib.sha256(str(R).encode()).hexdigest()[:10])
 alias.parent.mkdir(parents=True,exist_ok=True)
 if not alias.exists():run(['cmd','/c','mklink','/J',str(alias),str(L)],stdout=subprocess.DEVNULL)
@@ -37,7 +43,7 @@ else:
  (release/'.local').mkdir(exist_ok=True)
  for candidate in [R/'.local/composer.phar',R.parents[0]/'软件下载/composer.phar']:
   if candidate.exists():shutil.copy2(candidate,release/'.local/composer.phar');break
- ini=L/'php.ini';ini.write_text('extension_dir="ext"\nextension=pdo_mysql\nextension=mbstring\nextension=openssl\nextension=curl\n',encoding='utf-8')
+ ini=L/'php.ini';ini.write_text('extension_dir="ext"\nextension=pdo_mysql\nextension=mbstring\nextension=openssl\nextension=curl\nextension=zip\n',encoding='utf-8')
  data=alias/'mysql-data'
  if data.exists():raise SystemExit('Unfinished deployment data exists. Inspect .local/oneclick logs; do not overwrite it.')
  run([M/'bin/mysqld.exe','--no-defaults','--initialize-insecure','--basedir='+str(M),'--datadir='+str(data)],stdout=subprocess.DEVNULL,stderr=subprocess.DEVNULL)
