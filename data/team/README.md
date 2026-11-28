@@ -10,3 +10,5 @@
 数据来源与导入页的生图版本保存在 `figures/38_data_import_slide.png`，使用五个大图标呈现来源、校验、预览、事务入库和结果核对；导入数量来自本机实际验收。
 
 复用的空白演示背景保存在 `figures/39_blank_slide_background.png`：仅保留左上角课程标题及绿色边角装饰，页面内容与页码已清除；生图处理记录见同名 `_prompt.md` 文件。
+
+系统内容呈现页的生图版本保存在 `figures/40_system_content_flow_slide.png`：用用户操作、请求处理、查询数据、页面呈现四步和赛事、社区实例替代原来的代码截图；生图处理记录见同名 `_prompt.md` 文件。
