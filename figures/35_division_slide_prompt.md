@@ -1,0 +1,7 @@
+# 两人分工页生图记录
+
+使用内置生图功能，以用户提供的原分工页截图作为内容和配色参考，生成 `35_division_slide.png`。这是一张 16:9 位图，可作为演示文稿整页图片使用；图片中的文字不可直接编辑。
+
+## 最终提示词
+
+Use case: productivity-visual. Edit the attached slide as the content and color reference; create a fully redesigned, polished 16:9 presentation slide image, full canvas, no laptop or mockup. Keep the deep navy, football pitch green, lime and clean white palette. Improve readability dramatically with two spacious columns and a clear hierarchy. Add tasteful flat illustrated pictograms: left side account lock, community chat, document, deployment/server; right side football stadium, national team players, data import, bar chart. Add a simple visual 9:11 comparison of table ownership and a compact MVC relationship illustration at the bottom. No dense table or tiny text. Render Chinese text with precise professional typography and generous spacing. Include exactly these words and numbers, without paraphrase or additions: title「两人分工」; left heading「黄奕浩 2413581」, role「组长」, count「9 张表」, domain「公共与社区」, code line「账户权限 · 公告下载 · 社区审核 · 通知日志 · 部署」, documents line「需求、实现、部署、用户手册；完整录屏」; right heading「王乐之 2411302」, role「组员」, count「11 张表」, domain「赛事与收藏」, code line「比赛球队 · 球员阵容 · 数据导入 · 积分射手 · 收藏图表」, documents line「数据库设计、ER 图；最终 PPT 与赛事演示」; bottom label「双方均完成 MVC 三层」. Preserve the two people's names, student numbers and 9/11 counts exactly. Keep all text large enough to read in a classroom projection. No gibberish text, no extra labels, no watermark.
