@@ -11,4 +11,4 @@
 
 复用的空白演示背景保存在 `figures/39_blank_slide_background.png`：仅保留左上角课程标题及绿色边角装饰，页面内容与页码已清除；生图处理记录见同名 `_prompt.md` 文件。
 
-系统内容呈现页的生图版本保存在 `figures/40_system_content_flow_slide.png`：用用户操作、请求处理、查询数据、页面呈现四步和赛事、社区实例替代原来的代码截图；生图处理记录见同名 `_prompt.md` 文件。
+MVC 架构协作页的生图版本保存在 `figures/40_system_content_flow_slide.png`：以同一幅图串联运行流程、三层职责、真实代码节选及赛事和社区的文件映射；生图处理记录见同名 `_prompt.md` 文件。
