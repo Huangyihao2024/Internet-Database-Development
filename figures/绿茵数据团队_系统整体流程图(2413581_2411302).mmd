@@ -1,0 +1,8 @@
+flowchart LR
+  U[访客与登录用户] --> F[前台 Frontend<br/>页面与控制器]
+  A[管理员] --> B[后台 Backend<br/>页面与控制器]
+  F --> C[公共层 Common<br/>模型与服务]
+  B --> C
+  C <--> DB[(MySQL 20 表)]
+  R[公开数据] --> I[数据导入]
+  I --> DB

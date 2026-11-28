@@ -5,4 +5,4 @@
 
 项目需求页的生图版本保存在 `figures/36_requirements_slide.png`。示意画面不含具体赛事比分或统计数字，避免将插画误认为真实赛果。
 
-系统整体流程图的生图版本保存在 `figures/37_system_flow_slide.png`，呈现公开数据导入、MySQL 20 表与三类用户的业务路径；精确可编辑的流程图源文件仍为 `figures/*.mmd`。
+系统整体流程图的生图版本保存在 `figures/37_system_flow_slide.png`，呈现用户到前台/后台、公共层、MySQL 20 表的架构链路，以及合并后的数据导入模块；对应的可编辑图源为 `figures/绿茵数据团队_系统整体流程图(2413581_2411302).mmd`。
