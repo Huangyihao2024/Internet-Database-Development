@@ -4,3 +4,5 @@
 两人分工页的生图版本保存在 `figures/35_division_slide.png`，可作为演示文稿中的整页图片。仓库不交付自动生成的PPTX。
 
 项目需求页的生图版本保存在 `figures/36_requirements_slide.png`。示意画面不含具体赛事比分或统计数字，避免将插画误认为真实赛果。
+
+系统整体流程图的生图版本保存在 `figures/37_system_flow_slide.png`，呈现公开数据导入、MySQL 20 表与三类用户的业务路径；精确可编辑的流程图源文件仍为 `figures/*.mmd`。
